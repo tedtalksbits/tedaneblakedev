@@ -37,7 +37,7 @@ const Logo = styled.h1`
    /* font-style: italic; */
    font-weight: 600;
    white-space: nowrap;
-   color: #7b39fe;
+   color: #fff;
    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 
@@ -189,7 +189,7 @@ const NavBar = ({ white_80, white }) => {
                <i className='bx bxs-cloud' style={{ fontSize: '2rem', color: '#39fecd' }}></i>
                <a href="#top">
 
-                  <Logo>CloudCodes...</Logo>
+                  <Logo>TedDev</Logo>
                </a>
 
             </NavLogoContainer>
