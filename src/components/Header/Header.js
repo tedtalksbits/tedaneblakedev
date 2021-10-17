@@ -67,6 +67,7 @@ const Header = ({ white_10 }) => {
             background={white_10} borderColor={white_10} isHeaderCard={true}
             left="6"
             top="14"
+            hideOnMobile={true}
             text={
                <div className="animate__animated animate__fadeInDown">
                   <HeaderCardHtmlOne />
@@ -77,7 +78,7 @@ const Header = ({ white_10 }) => {
          />
          <GlassMorpCard
             background={white_10} borderColor={white_10} isHeaderCard={true}
-            right="6"
+            right="none"
             bottom="14"
             text={
                <div className="animate__animated animate__fadeInUp">

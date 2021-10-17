@@ -7,14 +7,9 @@ const ImageCardContainer = styled.div`
 
    display: grid;
    grid-template-rows: 1fr 1fr;
-   /* flex-direction: column; */
    gap: 4rem;
    height: fit-content;
-   outline: 1px ${themeColors.white_20} solid;
-   padding: 1rem;
-   border-radius: 8px;
-   background: ${themeColors.white_10};
-   
+  
 
    @media screen and (min-width: ${mixin}){
       grid-template-columns: .7fr 1.3fr;

@@ -167,11 +167,15 @@ const NavBar = ({ white_80, white }) => {
    const handleOpen = () => {
       setIsOpen(!isOpen)
       const body = document.getElementById("body");
+
       body.classList.toggle('mobile-no-scroll')
    }
 
    const handleClose = () => {
       setIsOpen(false);
+      // const body = document.getElementById("body");
+
+      // body.classList.remove('mobile-no-scroll')
    }
    return (
       <Nav background={white_80} >

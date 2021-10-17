@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import { mixin } from '../NavBar/NavBar';
 const GlassCard = styled.div`
+
+  
    background: ${props => props.background};
    backdrop-filter: blur(25px) saturate(1.2);
    border-radius: 12px;
@@ -12,28 +14,33 @@ const GlassCard = styled.div`
    min-height: 150px;
    min-width: 250px;
    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-/* 
    position: absolute;
-   z-index: 7;
-   left: 20%;
-   top: 14%; */
+   z-index: 20;
+   left: ${props => props.left}%;
+   right: ${props => props.right}%;
+   top: ${props => props.top}%;
+   bottom: ${props => props.bottom}%;
+   display: grid;
+   place-items: center;
+   user-select: none;
+
+
+   @media screen and (max-width: ${mixin}){
+      display: ${({ hideOnMobile }) => hideOnMobile ? 'none' : ''};
+   }
 
 `
-const GlassMorpCard = ({ background, borderColor, isHeaderCard, left, right, bottom, top, text }) => {
+const GlassMorpCard = ({ background, borderColor, isHeaderCard, left, right, bottom, top, text, hideOnMobile }) => {
 
    return (
       <GlassCard
-         background={background} borderColor={borderColor} style={isHeaderCard ? {
-            position: "absolute",
-            zIndex: "20",
-            left: `${left}%`,
-            right: `${right}%`,
-            top: `${top}%`,
-            bottom: `${bottom}%`,
-            display: 'grid',
-            placeItems: 'center',
-            userSelect: 'none'
-         } : null}
+         background={background}
+         borderColor={borderColor}
+         left={left}
+         right={right}
+         top={top}
+         bottom={bottom}
+         hideOnMobile={hideOnMobile}
       >
          {text}
       </GlassCard>
