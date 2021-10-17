@@ -168,14 +168,24 @@ const NavBar = ({ white_80, white }) => {
       setIsOpen(!isOpen)
       const body = document.getElementById("body");
 
-      body.classList.toggle('mobile-no-scroll')
+      if (isOpen == true) {
+
+         body.classList.remove('mobile-no-scroll')
+      }
+      else {
+         body.classList.add('mobile-no-scroll')
+      }
    }
 
    const handleClose = () => {
       setIsOpen(false);
-      // const body = document.getElementById("body");
+      const body = document.getElementById("body");
 
-      // body.classList.remove('mobile-no-scroll')
+      setTimeout(() => {
+
+         body.classList.remove('mobile-no-scroll')
+      }, 1000)
+
    }
    return (
       <Nav background={white_80} >
