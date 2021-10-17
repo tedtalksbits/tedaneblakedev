@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import { themeColors } from './data/appColors';
+import styled from 'styled-components';
+import HomePage from './pages/HomePage';
+import Footer from './components/Footer/Footer';
+import InfoSection from './pages/InfoSection';
+const MainApp = styled.main`
+  
 
+`
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MainApp className="App">
+        <NavBar {...themeColors} />
+        <HomePage {...themeColors} />
+        <InfoSection {...themeColors} />
+        <Footer {...themeColors} />
+      </MainApp>
+    </>
   );
 }
 
