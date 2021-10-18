@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { links } from '../../data/linkData';
+import Logo from '../Logo';
 
 
 export const mixin = '640px';
@@ -26,22 +28,22 @@ const NavContainer = styled.div`
    margin: auto;
 
 `
-const NavLogoContainer = styled.div`
-   margin-right: 1rem;
-   display: flex;
-   align-items: center;
-   gap: .4rem;
-`
-const Logo = styled.h1`
-   font-size: clamp(6px,8vw,1.5rem);
-   /* font-style: italic; */
-   font-weight: 600;
-   white-space: nowrap;
-   color: #fff;
-   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+// const NavLogoContainer = styled.div`
+//    margin-right: 1rem;
+//    display: flex;
+//    align-items: center;
+//    gap: .4rem;
+// `
+// const Logo = styled.h1`
+//    font-size: clamp(6px,8vw,1.5rem);
+//    /* font-style: italic; */
+//    font-weight: 600;
+//    white-space: nowrap;
+//    color: #fff;
+//    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
 
-`
+// `
 
 const NavLinksContainer = styled.div`
    display: flex;
@@ -184,7 +186,7 @@ const NavBar = ({ white_80, white }) => {
       setTimeout(() => {
 
          body.classList.remove('mobile-no-scroll')
-      }, 1000)
+      }, 500)
 
    }
    return (
@@ -192,35 +194,34 @@ const NavBar = ({ white_80, white }) => {
          <MobileLinksContainer openMobile={isOpen} className='animate__animated animate__slideInRight'>
 
             <MobileLinks className="mobile-links-container" onClick={handleClose}  >
-               <NavLinkItem href="#top">Home</NavLinkItem>
-               <NavLinkItem href="#info">More Info</NavLinkItem>
-               <NavLinkItem href="#bottom">Go to bottom</NavLinkItem>
+               {links.map((link, index) => (
+
+                  <NavLinkItem href={link.href} key={index}>{link.title}</NavLinkItem>
+               ))}
+
             </MobileLinks>
          </MobileLinksContainer>
 
          <NavContainer>
-            <NavLogoContainer>
-               <i className='bx bxs-cloud' style={{ fontSize: '2rem', color: '#39fecd' }}></i>
-               <a href="#top">
 
-                  <Logo>TedDev</Logo>
-               </a>
-
-            </NavLogoContainer>
+            <Logo
+               href="#top"
+               text="TedDev"
+               icon="bx bxs-cloud"
+            />
 
             <NavLinksContainer>
                <NavLinks>
-                  <p>test</p>
-                  <NavLinkItem href="#info">More Info</NavLinkItem>
-                  <NavLinkItem href="#bottom">Go to bottom</NavLinkItem>
+
+                  {links.map((link, index) => (
+                     <NavLinkItem href={link.href} key={index}>{link.title}</NavLinkItem>
+                  ))}
                </NavLinks>
                <MobileMenu onClick={handleOpen}>
                   <NavIcon small={true} color={white} id="nav-icon" iconOpen={isOpen} >
-
                      <span></span>
                      <span></span>
                      <span></span>
-
                   </NavIcon>
                </MobileMenu>
             </NavLinksContainer>
