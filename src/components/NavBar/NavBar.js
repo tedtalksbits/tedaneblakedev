@@ -229,7 +229,7 @@ const NavBar = ({ white_80, white }) => {
          <NavContainer>
 
             <Logo
-               href="/"
+               href="https://tedtalksbits.github.io/tedaneblakedev"
                text="TedDev"
                icon="bx bxs-cloud"
             />

@@ -23,7 +23,7 @@ const CardContainer = styled.div`
    background: ${props => props.background || themeColors.white_10};
    backdrop-filter: blur(25px) saturate(1.2);
    border-radius: 12px;
-   outline: 1px ${props => props.outlineColor || themeColors.white_20} solid; 
+   border: 1px ${props => props.outlineColor || themeColors.white_20} solid; 
    padding: 1rem; 
    margin: 1rem 0;
    display: flex;
@@ -32,6 +32,7 @@ const CardContainer = styled.div`
    gap: 1em;
    transition: all ease-in-out .4s;
    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   overflow: hidden;
    /* box-shadow: ${props => props.background} 0px 10px 15px -3px, ${props => props.background} 0px 4px 6px -2px; */
 
    :hover{

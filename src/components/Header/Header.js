@@ -97,7 +97,7 @@ const Header = ({ white_10, primary }) => {
          <GlassMorpCard
             background={white_10} borderColor={white_10} isHeaderCard={true}
             right="none"
-            bottom="10"
+            bottom="0"
             component={<ComponentTwo />}
             animation="animate__fadeInUp"
 
