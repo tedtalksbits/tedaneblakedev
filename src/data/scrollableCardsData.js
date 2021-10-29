@@ -1,6 +1,6 @@
 import imageone from '../images/3d-flame-264.png'
 import imagetwo from '../images/business-3d-bitcoin-mining.png'
-import imagethree from '../images/3d-flame-work-time.png'
+import imagethree from '../images/business-3d-bitcoin-mining.png'
 
 
 export const cardData = [
