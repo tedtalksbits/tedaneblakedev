@@ -2,13 +2,16 @@ export const links = [
    {
       title: "Home",
       href: '#top',
+      class: 'active my-link'
    },
    {
-      title: "More Info",
+      title: "More",
       href: '#info',
+      class: 'my-link'
    },
    {
-      title: "Go To Bottom",
+      title: "Bottom",
       href: '#bottom',
+      class: 'my-link'
    },
 ]

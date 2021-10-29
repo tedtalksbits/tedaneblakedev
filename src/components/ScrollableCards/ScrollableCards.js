@@ -16,6 +16,7 @@ const Card = styled.div`
    flex-shrink: 0;
    overflow: hidden;
    cursor: pointer;
+   position: relative;
    :hover{
       border: 2px white solid;
    }

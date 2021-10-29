@@ -1,10 +1,11 @@
 import { themeColors } from "../../data/appColors"
 export const blobButtonPrimary = {
    color: themeColors.white,
-   text: 'Primary button here boss',
+   text: 'Hire Me?',
    alignment: 'center',
    whiteButton: true,
-   altColor: themeColors.primary
+   altColor: themeColors.primary,
+   small: false,
 }
 export const blobButtonSecondary = {
    color: '#ff4e02',

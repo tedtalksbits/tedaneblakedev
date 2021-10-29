@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import HomePage from './pages/HomePage';
 import Footer from './components/Footer/Footer';
 import InfoSection from './pages/InfoSection';
-import ScrollableCards from './components/ScrollableCards/ScrollableCards';
+import Header from './components/Header/Header';
 const MainApp = styled.main`
   
 
@@ -16,9 +16,10 @@ function App() {
     <>
       <MainApp className="App">
         <NavBar {...themeColors} />
+        <Header {...themeColors} />
         <HomePage {...themeColors} />
         <InfoSection {...themeColors} />
-        {/* <ScrollableCards /> */}
+
         <Footer {...themeColors} />
       </MainApp>
     </>

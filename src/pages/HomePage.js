@@ -1,12 +1,11 @@
 import React from 'react'
-import Header from '../components/Header/Header'
 
 
-const HomePage = ({ ...themeColors }) => {
+
+const HomePage = () => {
    return (
       <>
 
-         <Header {...themeColors} />
 
       </>
    )

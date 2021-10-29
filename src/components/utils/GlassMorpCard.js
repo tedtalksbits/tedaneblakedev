@@ -5,7 +5,7 @@ const GlassCard = styled.div`
 
   
    background: ${props => props.background};
-   backdrop-filter: blur(25px) saturate(1.2);
+   backdrop-filter: blur(100px) saturate(1.2);
    border-radius: 12px;
    border: 1px ${props => props.borderColor} solid;
    color: white;
@@ -30,7 +30,10 @@ const GlassCard = styled.div`
    }
 
 `
-const GlassMorpCard = ({ background, borderColor, isHeaderCard, left, right, bottom, top, text, hideOnMobile }) => {
+const AnimationDiv = styled.div`
+
+`
+const GlassMorpCard = ({ background, borderColor, isHeaderCard, left, right, bottom, top, component, hideOnMobile, animation }) => {
 
    return (
       <GlassCard
@@ -42,9 +45,11 @@ const GlassMorpCard = ({ background, borderColor, isHeaderCard, left, right, bot
          bottom={bottom}
          hideOnMobile={hideOnMobile}
       >
-         {text}
+         <AnimationDiv className={`animate__animated ${animation}`}>
+            {component}
+         </AnimationDiv>
       </GlassCard>
    )
 }
 
-export default GlassMorpCard
+export default GlassMorpCard;

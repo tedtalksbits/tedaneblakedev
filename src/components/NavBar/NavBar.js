@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { themeColors } from '../../data/appColors';
 import { links } from '../../data/linkData';
 import Logo from '../Logo';
 
 
 export const mixin = '640px';
+export const bRadius = '12px';
 
 const Nav = styled.nav`
    /* background: ${props => props.background}; */
@@ -12,7 +14,7 @@ const Nav = styled.nav`
    width: 100%;
    height: 70px;
    padding: .5rem 1rem;
-   backdrop-filter: blur(55px);
+   backdrop-filter: blur(100px);
    display: flex;
    align-items: center;
    z-index: 2000;
@@ -60,17 +62,27 @@ const NavLinks = styled.div`
    font-size: 1.2rem;
    transition: .3s;
    display: none;
+   backdrop-filter: blur(25px) saturate(6);
+   
 
    @media screen and (min-width: ${mixin}){
       display: flex;
    }
+   
 `
 const NavLinkItem = styled.a`
-
+   padding: .5rem 2.2rem;
+   border: 1px white solid;
+   border-radius: ${bRadius};
    font-size: 3rem;
+   transition: .4s ease all;
 
    @media  screen and (min-width: ${mixin}){
       font-size: 1rem;
+   }
+   :hover, &.active{
+      background: ${themeColors.white_80};
+      color: ${themeColors.gradientDark}
    }
 `
 const MobileMenu = styled.div`
@@ -169,9 +181,7 @@ const NavBar = ({ white_80, white }) => {
    const handleOpen = () => {
       setIsOpen(!isOpen)
       const body = document.getElementById("body");
-
-      if (isOpen == true) {
-
+      if (isOpen === true) {
          body.classList.remove('mobile-no-scroll')
       }
       else {
@@ -182,13 +192,27 @@ const NavBar = ({ white_80, white }) => {
    const handleClose = () => {
       setIsOpen(false);
       const body = document.getElementById("body");
-
       setTimeout(() => {
-
          body.classList.remove('mobile-no-scroll')
       }, 500)
+   }
+
+   // active link
+
+   const removeClass = () => {
+
+      const allLinks = document.querySelectorAll('.my-link');
+      allLinks.forEach(link => link.classList.remove('active'));
+   }
+
+
+   const handleActive = (e) => {
+      removeClass()
+      e.target.classList.add('active')
 
    }
+
+
    return (
       <Nav background={white_80} >
          <MobileLinksContainer openMobile={isOpen} className='animate__animated animate__slideInRight'>
@@ -196,7 +220,7 @@ const NavBar = ({ white_80, white }) => {
             <MobileLinks className="mobile-links-container" onClick={handleClose}  >
                {links.map((link, index) => (
 
-                  <NavLinkItem href={link.href} key={index}>{link.title}</NavLinkItem>
+                  <NavLinkItem href={link.href} key={index} >{link.title}</NavLinkItem>
                ))}
 
             </MobileLinks>
@@ -205,16 +229,15 @@ const NavBar = ({ white_80, white }) => {
          <NavContainer>
 
             <Logo
-               href="#top"
+               href="/"
                text="TedDev"
                icon="bx bxs-cloud"
             />
 
             <NavLinksContainer>
                <NavLinks>
-
                   {links.map((link, index) => (
-                     <NavLinkItem href={link.href} key={index}>{link.title}</NavLinkItem>
+                     <NavLinkItem href={link.href} key={index} className={link.class} onClick={handleActive}>{link.title}</NavLinkItem>
                   ))}
                </NavLinks>
                <MobileMenu onClick={handleOpen}>

@@ -31,5 +31,5 @@ export const MainContentWrapper = styled.div`
 
 export const Container = styled.div`
 
-   margin: 2.5rem 0;
+   margin: 12.5rem 0;
 `

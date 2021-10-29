@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bRadius } from '../NavBar/NavBar';
 
 export const BlobButton = styled.button`
    align-self: ${props => props.alignment || ''};
@@ -10,8 +11,8 @@ export const BlobButton = styled.button`
    text-align: center;
    position: relative;
    border: none;
-   padding: ${({ small }) => small ? '5px 7px' : '1rem 2rem'};
-   border-radius: 4px;
+   padding: ${({ small }) => small ? '5px 7px' : '1.5em 3rem'};
+   border-radius: ${bRadius};
    transition: color calc(0.5s * .75);
    font-weight: 900;
    cursor: pointer;
@@ -34,7 +35,7 @@ export const BlobButton = styled.button`
       height: 100%;
       position: absolute;
       border: 3px solid ${props => props.color || "#9a02ff"};
-      border-radius: 4px;
+      border-radius: ${bRadius};
       top: 0;
       content: "";
       z-index: 1;

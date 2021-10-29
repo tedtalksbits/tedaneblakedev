@@ -1,14 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import { themeColors } from '../data/appColors'
-import IconBox from './IconBox'
+import { themeColors } from '../../data/appColors'
+import IconBox from '../IconBox';
+
+
 const CodeLine = styled.p`
    font-size: .9rem;
 `
-const Syntax = styled.span`
+const Syntax = styled.code`
    color: ${({ col }) => col === '1' ? '#ffffffa1' : col === '2' ? 'blueviolet' : themeColors.secondary};
 `
-export const HeaderCardHtmlOne = () => {
+export const ComponentOne = () => {
    return (
       <>
          <CodeLine >
@@ -35,18 +37,10 @@ export const HeaderCardHtmlOne = () => {
 
          <br />
          <CodeLine >
-            <Syntax col='2'>
-               return
-            </Syntax>
-            <Syntax col='1'>
-               (
-            </Syntax>
-
-            hire me!
-
-            <Syntax col='1'>
-               )
-            </Syntax>
+            <Syntax col='2'>return</Syntax>
+            <Syntax col='1'>(</Syntax>
+            <Syntax> Hire Me! </Syntax>
+            <Syntax col='1'>)</Syntax>
 
          </CodeLine>
       </>
@@ -55,7 +49,7 @@ export const HeaderCardHtmlOne = () => {
 
 
 
-export const HeaderCardHtmlTwo = () => {
+export const ComponentTwo = () => {
    return (
       <div style={{ display: 'flex', gap: '1.5rem' }}>
 
@@ -63,6 +57,7 @@ export const HeaderCardHtmlTwo = () => {
             <IconBox
                background={themeColors.primary}
                icon={<i className='bx bxl-twitter' ></i>}
+               hovertext="twitter"
 
             />
          </a>
@@ -71,6 +66,7 @@ export const HeaderCardHtmlTwo = () => {
             <IconBox
                background={themeColors.primary}
                icon={<i className='bx bxl-github' ></i>}
+               hovertext="github"
 
             />
          </a>
@@ -79,6 +75,7 @@ export const HeaderCardHtmlTwo = () => {
             <IconBox
                background={themeColors.primary}
                icon={<i className='bx bxl-linkedin' ></i>}
+               hovertext="linkedin"
 
             />
          </a>

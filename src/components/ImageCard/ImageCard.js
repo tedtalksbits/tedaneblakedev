@@ -44,12 +44,6 @@ const Image = styled.img`
 	70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
 	84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
 } */
-   
-
-
-
-   
-
 
 `
 
@@ -63,7 +57,7 @@ const CardTextHighlighted = styled.h4`
 `
 
 const CardHeading = styled.h1`
-   margin: .875rem 0 2.1rem;
+   margin: 2rem 0 .8rem;
 `
 
 const CardSubHeading = styled.div`

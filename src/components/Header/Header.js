@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import headerimg from '../../images/css-stars-2.svg'
-import headerimg2 from '../../images/bg.svg'
+import headerimg from '../../images/moon.png'
+import headerimg2 from '../../images/stars.png'
 import { MainContentWrapper } from '../utils/mainComponents'
 import BlobbyButton from '../BlobbyButton'
 import { blobButtonPrimary } from '../BlobbyButton/Data'
 import GlassMorpCard from '../utils/GlassMorpCard'
-import { HeaderCardHtmlOne, HeaderCardHtmlTwo } from '../HeaderCardHtml'
+import { ComponentOne, ComponentTwo } from './HeaderFloatingCards'
+import { themeColors } from '../../data/appColors'
 
 
 const HeaderContainer = styled.header`
@@ -16,19 +17,37 @@ const HeaderContainer = styled.header`
    height: 100vh;
    justify-content: center;
    align-items: center;
+   
+   &::before{
+      content: '';
+      height: 100px;
+      background: linear-gradient(0deg, ${themeColors.page || 'red'}, transparent);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      z-index: 50;
+   }
 `
 const HeaderContentContainer = styled.div`
-   margin: 4rem 0 2rem;
+   /* margin: 4rem 0 2rem; */
    text-align: center;
    align-items: center;
-   
-   
    background: linear-gradient(transparent, transparent), url(${headerimg2}) center center no-repeat;
 
    /* @media screen and (min-width : 740px){
       display: flex;
    } */
    
+`
+const HeaderCenter = styled.div`
+   position: absolute; 
+   text-align: center;
+   z-index: 20;
+   display: flex;
+   flex-direction: column;
+
+  
+
 `
 const Heading = styled.h1`
    font-size: clamp(2rem, 8vw, 5rem);
@@ -51,16 +70,19 @@ const HeaderImageContainer = styled.div`
    > img{
       object-fit: cover;
       width: 100%;
-      height: calc(100vh - 5rem);
+      /* height: calc(100vh - 5rem); */
+      height: 100vh;
+      mix-blend-mode: screen;
       /* height: 500px; */
    }
 `
 const Subtitle = styled.p`
    font-size: 1.3rem;
+   color: ${themeColors.white_70};
    animation-delay: 0.5s;
    margin-bottom: 4rem;
 `
-const Header = ({ white_10 }) => {
+const Header = ({ white_10, primary }) => {
    return (
       <HeaderContainer id="top">
          <GlassMorpCard
@@ -68,37 +90,34 @@ const Header = ({ white_10 }) => {
             left="6"
             top="14"
             hideOnMobile={true}
-            text={
-               <div className="animate__animated animate__fadeInDown">
-                  <HeaderCardHtmlOne />
-               </div>
-
-            }
+            component={<ComponentOne />}
+            animation="animate__fadeInDown"
 
          />
          <GlassMorpCard
             background={white_10} borderColor={white_10} isHeaderCard={true}
             right="none"
-            bottom="14"
-            text={
-               <div className="animate__animated animate__fadeInUp">
-                  <HeaderCardHtmlTwo />
-               </div>
-            }
+            bottom="10"
+            component={<ComponentTwo />}
+            animation="animate__fadeInUp"
 
          />
-         <div style={{ position: 'absolute', textAlign: 'center', zIndex: '20', display: 'flex', flexDirection: 'column' }}>
+         <HeaderCenter>
+            <Heading
+               className="animate__animated animate__fadeInUp"
+               color='white'>
+               Hi, I'm Tedane
+            </Heading>
 
-            <Heading className="animate__animated animate__fadeInUp" color='white'>Header will go here big boss</Heading>
-            <Subtitle className="animate__animated animate__fadeInRight para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, debitis!</Subtitle>
+            <Subtitle
+               className="animate__animated animate__fadeInRight para">
+               Computer Programming Student and Web Dev Enthusiast
+            </Subtitle>
+
             <BlobbyButton {...blobButtonPrimary} />
+         </HeaderCenter>
 
-         </div>
-         <MainContentWrapper style={{
-            padding: '0', backGround: 'linear-gradient( 1deg, #02040e 25%, #0c012e 100%)',
-            opacity: '.3'
-         }}>
-
+         <MainContentWrapper >
             <HeaderContentContainer className='full-view'>
 
                <HeaderImageContainer>
