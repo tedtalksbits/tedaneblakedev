@@ -55,14 +55,14 @@ const NavLinks = styled.div`
    
 `
 const NavLinkItem = styled.a`
-   padding: .5rem 2.2rem;
+   padding: .4rem 1.5rem;
    border: 1px white solid;
    border-radius: ${bRadius};
-   font-size: 3rem;
+   font-size: 1.875rem;
    transition: .4s ease all;
 
    @media  screen and (min-width: ${mixin}){
-      font-size: 1rem;
+      font-size: .9rem;
    }
    :hover, &.active{
       background: ${themeColors.white_80};

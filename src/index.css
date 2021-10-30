@@ -5,6 +5,8 @@
 html{
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
+  background: #02040e;
+ 
 }
 *, *::before, *::after{
 box-sizing: border-box;
@@ -17,8 +19,6 @@ body {
   background: var(--app-gradient);
   background-repeat: no-repeat;
   min-height: 100vh;
-  margin: 0;
-  scroll-behavior: smooth;
 }
 
 code {
@@ -36,11 +36,9 @@ p{
 .mobile-no-scroll{
   overflow-y: hidden;
 
-  
- 
 }
 
-@media screen and (min-width: 570px){
+@media screen and (min-width: 940px){
   .mobile-no-scroll{
     overflow-y: visible;
   }

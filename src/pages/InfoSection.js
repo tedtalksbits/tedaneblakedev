@@ -36,7 +36,7 @@ const InfoSection = ({ primary_05 }) => {
             </Container>
          </Slide>
          <div id="tech"></div>
-         <Slide right >
+         <Fade >
             <Container  >
                <Heading>Technologies</Heading>
                <CardsWrapper >
@@ -45,7 +45,7 @@ const InfoSection = ({ primary_05 }) => {
                   ))}
                </CardsWrapper>
             </Container>
-         </Slide>
+         </Fade>
          <div id="projects"></div>
          <Container>
             <Heading>Projects</Heading>

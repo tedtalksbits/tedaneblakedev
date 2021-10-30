@@ -56,7 +56,8 @@ const Heading = styled.h1`
    margin-bottom: 2rem;
    color: ${props => props.color};
    /* position: absolute; */
-   z-index: 20;
+   z-index: 30;
+   text-shadow: 6px 9px 9px black;
 
 
 `

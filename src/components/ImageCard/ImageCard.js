@@ -11,7 +11,7 @@ const ImageCardContainer = styled.div`
    height: fit-content;
   
 
-   @media screen and (min-width: ${mixin}){
+   @media screen and (min-width: 640px){
       grid-template-columns: .7fr 1.3fr;
       grid-template-rows: none;
    }
