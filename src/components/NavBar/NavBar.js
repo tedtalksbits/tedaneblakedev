@@ -80,15 +80,16 @@ const MobileLinksContainer = styled.div`
 
    display: ${({ openMobile }) => openMobile ? 'grid' : 'none'};
    place-items: center;
-   height: 100vh;
+   min-height: 100vh;
    width: 100%;
-   background: black;
+   background: ${themeColors.gradientDark};
    position: absolute;
    left: 0;
    top: 0;
    backdrop-filter: blur(1px);
    animation-duration: .3s;
    transition: all ease .3s;
+   overflow: hidden;
 
    @media screen and (min-width: ${mixin}){
       display: none;
