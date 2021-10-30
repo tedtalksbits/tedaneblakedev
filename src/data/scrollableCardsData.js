@@ -1,36 +1,31 @@
-import imageone from '../images/3d-flame-264.png'
-import imagetwo from '../images/business-3d-bitcoin-mining.png'
-import imagethree from '../images/business-3d-bitcoin-mining.png'
-
-
 export const cardData = [
    {
-      image: imageone,
+      image: 'https://robohash.org/pariaturporrorerum.png?size=200x200&set=set1',
       bg: '#8c1bf1'
    },
    {
-      image: imagetwo,
+      image: 'https://robohash.org/inventoremagnamconsequuntur.png?size=200x200&set=set1',
       bg: '#f766f8'
    },
    {
-      image: imagethree,
+      image: 'https://robohash.org/accusantiumtemporibushic.png?size=200x200&set=set1',
       bg: '#f6f8bc'
    },
    {
-      image: imagethree,
-      bg: '#f6f8bc'
+      image: 'https://robohash.org/beataeipsamnon.png?size=200x200&set=set1',
+      bg: '#f8c7ba'
    },
    {
-      image: imagethree,
-      bg: '#f6f8bc'
+      image: 'https://robohash.org/quialaborumquo.png?size=200x200&set=set1',
+      bg: '#baf8e3'
    },
    {
-      image: imagethree,
-      bg: '#f6f8bc'
+      image: 'https://robohash.org/consectetursedautem.png?size=200x200&set=set1',
+      bg: '#1ef1df'
    },
    {
-      image: imagethree,
-      bg: '#f6f8bc'
+      image: 'https://robohash.org/nequeatea.png?size=200x200&set=set1',
+      bg: '#f86868'
    },
 
 ]

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { mixin } from '../NavBar/NavBar'
 
 export const MainContentWrapper = styled.div`
 
@@ -8,7 +9,7 @@ export const MainContentWrapper = styled.div`
    color: ${props => props.color};
    transition: .3s all;
    width: 100%;
-   padding: 4.5rem 1rem;
+   padding: 4.5rem 1rem 0;
 
    > * input{
       color: ${props => props.color};
@@ -31,5 +32,9 @@ export const MainContentWrapper = styled.div`
 
 export const Container = styled.div`
 
-   margin: 12.5rem 0;
+   margin: 9rem 0;
+
+   @media screen and (max-width: ${mixin}){
+      margin: 6.5rem 0;
+   }
 `

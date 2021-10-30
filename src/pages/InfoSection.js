@@ -35,8 +35,8 @@ const InfoSection = ({ primary_05 }) => {
                />
             </Container>
          </Slide>
-
-         <Slide right>
+         <div id="tech"></div>
+         <Slide right >
             <Container  >
                <Heading>Technologies</Heading>
                <CardsWrapper >
@@ -46,22 +46,11 @@ const InfoSection = ({ primary_05 }) => {
                </CardsWrapper>
             </Container>
          </Slide>
-
-         <Fade bottom>
-
-            <Container>
-               <Heading>Projects</Heading>
-               <ScrollableCards style={{ margin: '0' }} />
-            </Container>
-         </Fade>
-
-
-
-
-
-
-
-
+         <div id="projects"></div>
+         <Container>
+            <Heading>Projects</Heading>
+            <ScrollableCards style={{ margin: '0' }} />
+         </Container>
       </MainContentWrapper>
    )
 }

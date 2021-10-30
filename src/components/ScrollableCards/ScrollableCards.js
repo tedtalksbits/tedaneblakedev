@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro';
 import { cardData } from '../../data/scrollableCardsData';
-
+import { mixin } from '../NavBar/NavBar';
 
 
 const CardsGroup = styled.div`
@@ -9,8 +9,8 @@ const CardsGroup = styled.div`
    margin: 0 auto 5.5rem;
 `
 const Card = styled.div`
-   height: 100px;
-   width: 100px;
+   height: 220px;
+   width: 220px;
    border-radius: 1.5rem;
    scroll-snap-align: start;
    flex-shrink: 0;
@@ -20,7 +20,7 @@ const Card = styled.div`
    :hover{
       border: 2px white solid;
    }
-   @media screen and (min-width: 768px){
+   @media screen and (min-width: ${mixin}){
      width: 150px;
      height: 150px;
    }

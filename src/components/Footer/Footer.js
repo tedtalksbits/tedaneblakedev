@@ -1,9 +1,43 @@
 import React from 'react'
 import styled from 'styled-components'
+import { themeColors } from '../../data/appColors'
 import IconBox from '../IconBox'
+import { mixin } from '../NavBar/NavBar'
 
 const FooterContainer = styled.footer`
    position: relative;
+   display: grid;
+   grid-template-columns: .2fr .2fr .2fr .4fr;
+   height:  15rem;
+
+   @media screen and (max-width: ${mixin}){
+      display: block;
+      height: 100%;
+      
+     
+   }
+
+   .full-bleed {
+      width:100%;
+      grid-column: 1 / 4;
+   } 
+`
+const Colomn = styled.div`
+
+   ul{
+      text-decoration: none;
+      list-style: none;
+      color: ${themeColors.white_50};
+      
+      li{
+         display: flex;
+         align-items: center;
+         gap: 4px;
+         
+        
+      }
+   }
+  
 `
 const ScrollUpContainer = styled.div`
    position: absolute;
@@ -13,11 +47,10 @@ const ScrollUpContainer = styled.div`
 `
 const Footer = ({ primary }) => {
    return (
-      <FooterContainer id="bottom" style={{ height: '15rem' }}>
-         <h1>Footer here big boss</h1>
+      <FooterContainer id="bottom" >
+
 
          <ScrollUpContainer>
-
             <a href="#top">
                <IconBox
                   icon={<i className='bx bx-up-arrow-alt' ></i>}
@@ -27,6 +60,47 @@ const Footer = ({ primary }) => {
 
             </a>
          </ScrollUpContainer>
+
+         <Colomn>
+            <ul>
+               <li><h3>Contact</h3></li>
+               <li>
+                  <a href="mailto:blakt7@farmindale.edu" id="email" >Email</a>
+                  <i class='bx bx-mail-send'></i>
+               </li>
+               <li>
+                  <a href="">LinkedIn</a>
+                  <i class='bx bxl-linkedin-square' ></i>
+               </li>
+               <li>
+                  <a href="https://paypal.me/tedtalks190?country.x=US&locale.x=en_US">
+                     Buy Me Coffee
+                  </a>
+                  <i class='bx bx-coffee-togo' ></i>
+               </li>
+            </ul>
+         </Colomn>
+         <Colomn hideOnMobile={true}>
+            <ul>
+               <li><h3>Other Projects</h3></li>
+               <li>Coming Soon...</li>
+            </ul>
+         </Colomn>
+         <Colomn hideOnMobile={true}>
+            <ul>
+               <li><h3>Phi Theta Kappa</h3></li>
+               <li>Member Since 2019</li>
+               <li>Learn More</li>
+            </ul>
+         </Colomn>
+         <Colomn>
+            <ul>
+               <li><h3>Blog</h3></li>
+               <li>Coming Soon...</li>
+            </ul>
+
+         </Colomn>
+
       </FooterContainer>
    )
 }

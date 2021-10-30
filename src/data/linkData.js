@@ -5,12 +5,22 @@ export const links = [
       class: 'active my-link'
    },
    {
-      title: "More",
+      title: "About",
       href: '#info',
       class: 'my-link'
    },
    {
-      title: "Bottom",
+      title: "Tech",
+      href: '#tech',
+      class: 'my-link'
+   },
+   {
+      title: "Projects",
+      href: '#projects',
+      class: 'my-link'
+   },
+   {
+      title: "Contact",
       href: '#bottom',
       class: 'my-link'
    },
