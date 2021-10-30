@@ -5,7 +5,7 @@ import { links } from '../../data/linkData';
 import Logo from '../Logo';
 
 
-export const mixin = '640px';
+export const mixin = '940px';
 export const bRadius = '12px';
 
 const Nav = styled.nav`
@@ -30,22 +30,6 @@ const NavContainer = styled.div`
    margin: auto;
 
 `
-// const NavLogoContainer = styled.div`
-//    margin-right: 1rem;
-//    display: flex;
-//    align-items: center;
-//    gap: .4rem;
-// `
-// const Logo = styled.h1`
-//    font-size: clamp(6px,8vw,1.5rem);
-//    /* font-style: italic; */
-//    font-weight: 600;
-//    white-space: nowrap;
-//    color: #fff;
-//    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//     monospace;
-
-// `
 
 const NavLinksContainer = styled.div`
    display: flex;
