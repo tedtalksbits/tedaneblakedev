@@ -86,6 +86,7 @@ const MobileLinksContainer = styled.div`
    position: absolute;
    left: 0;
    top: 0;
+   bottom: 0;
    backdrop-filter: blur(1px);
    animation-duration: .3s;
    transition: all ease .3s;
