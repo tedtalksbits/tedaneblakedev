@@ -83,7 +83,7 @@ const MobileLinksContainer = styled.div`
    min-height: 100vh;
    width: 100%;
    background: ${themeColors.gradientDark};
-   position: absolute;
+   position: fixed;
    left: 0;
    top: 0;
    bottom: 0;
@@ -201,7 +201,7 @@ const NavBar = ({ white_80, white }) => {
 
    return (
       <Nav background={white_80} >
-         <MobileLinksContainer openMobile={isOpen} className='animate__animated animate__slideInRight'>
+         <MobileLinksContainer openMobile={isOpen} className='animate__animated animate__slideInRight mobile__container'>
 
             <MobileLinks className="mobile-links-container" onClick={handleClose}  >
                {links.map((link, index) => (

@@ -28,7 +28,17 @@ const InfoSection = ({ primary_05 }) => {
                   highlighted="About me"
                   heading="Tedane Blake"
                   subheading={
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias porro fugit minima itaque excepturi adipisci ipsam provident repellat, enim qui corrupti deleniti. Maiores, sit illo?</p>
+                     <>
+                        <ul>
+                           <li><p>An Information Tech. graduate aspiring to a Software/Web Developer.</p></li>
+
+                        </ul>
+                        <ul>
+
+                           <li><p>B.S. Degree Program in Computer Programming Inf. Sys, Farmingdale State College, Farmingdale, NY</p></li>
+                        </ul>
+                     </>
+
                   }
                   src={profile}
 
@@ -41,7 +51,7 @@ const InfoSection = ({ primary_05 }) => {
                <Heading>Technologies</Heading>
                <CardsWrapper >
                   {techCards.map((e, index) => (
-                     <Card key={index} text={e.text} icon={e.icon} title={e.title} />
+                     <Card key={index} icon={e.icon} title={e.title} />
                   ))}
                </CardsWrapper>
             </Container>

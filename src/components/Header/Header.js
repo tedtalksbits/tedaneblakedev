@@ -83,7 +83,7 @@ const Subtitle = styled.p`
    animation-delay: 0.5s;
    margin-bottom: 4rem;
 `
-const Header = ({ white_10, primary }) => {
+const Header = ({ white_10 }) => {
    return (
       <HeaderContainer id="top">
          <GlassMorpCard
@@ -114,8 +114,9 @@ const Header = ({ white_10, primary }) => {
                className="animate__animated animate__fadeInRight para">
                Computer Programming Student and Web Dev Enthusiast
             </Subtitle>
-
-            <BlobbyButton {...blobButtonPrimary} />
+            <a href="mailto:blakt7@farmindale.edu" id="email" style={{ display: 'grid', placeContent: 'center' }}>
+               <BlobbyButton {...blobButtonPrimary} />
+            </a>
          </HeaderCenter>
 
          <MainContentWrapper >
