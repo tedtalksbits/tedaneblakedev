@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/tedaneblakedev/static/css/main.81310812.chunk.css",
-    "main.js": "/tedaneblakedev/static/js/main.e8739cd2.chunk.js",
-    "main.js.map": "/tedaneblakedev/static/js/main.e8739cd2.chunk.js.map",
+    "main.js": "/tedaneblakedev/static/js/main.a1944736.chunk.js",
+    "main.js.map": "/tedaneblakedev/static/js/main.a1944736.chunk.js.map",
     "runtime-main.js": "/tedaneblakedev/static/js/runtime-main.2bd7601e.js",
     "runtime-main.js.map": "/tedaneblakedev/static/js/runtime-main.2bd7601e.js.map",
-    "static/js/2.f279f0e9.chunk.js": "/tedaneblakedev/static/js/2.f279f0e9.chunk.js",
-    "static/js/2.f279f0e9.chunk.js.map": "/tedaneblakedev/static/js/2.f279f0e9.chunk.js.map",
+    "static/js/2.0318ca94.chunk.js": "/tedaneblakedev/static/js/2.0318ca94.chunk.js",
+    "static/js/2.0318ca94.chunk.js.map": "/tedaneblakedev/static/js/2.0318ca94.chunk.js.map",
     "index.html": "/tedaneblakedev/index.html",
     "static/css/main.81310812.chunk.css.map": "/tedaneblakedev/static/css/main.81310812.chunk.css.map",
-    "static/js/2.f279f0e9.chunk.js.LICENSE.txt": "/tedaneblakedev/static/js/2.f279f0e9.chunk.js.LICENSE.txt",
+    "static/js/2.0318ca94.chunk.js.LICENSE.txt": "/tedaneblakedev/static/js/2.0318ca94.chunk.js.LICENSE.txt",
     "static/media/moon.35101a07.png": "/tedaneblakedev/static/media/moon.35101a07.png",
     "static/media/stars.2048b226.png": "/tedaneblakedev/static/media/stars.2048b226.png",
     "static/media/tedaneprofile.0e139ed0.JPG": "/tedaneblakedev/static/media/tedaneprofile.0e139ed0.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.2bd7601e.js",
-    "static/js/2.f279f0e9.chunk.js",
+    "static/js/2.0318ca94.chunk.js",
     "static/css/main.81310812.chunk.css",
-    "static/js/main.e8739cd2.chunk.js"
+    "static/js/main.a1944736.chunk.js"
   ]
 }
