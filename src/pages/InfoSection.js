@@ -8,8 +8,6 @@ import ScrollableCards from '../components/ScrollableCards/ScrollableCards';
 import { techCards } from '../data/techCardData'
 import styled from 'styled-components';
 import { themeColors } from '../data/appColors';
-import Slide from 'react-reveal/Slide'
-import Fade from 'react-reveal/Fade'
 
 const Heading = styled.h1`
    margin-bottom: 1.6rem;
@@ -20,42 +18,42 @@ const InfoSection = ({ primary_05 }) => {
    return (
       <MainContentWrapper style={{ height: '100%', background: `${primary_05}` }} id='info'>
 
-         <Slide left>
 
-            <Container>
-               <Heading>Profile</Heading>
-               <ImageCard
-                  highlighted="About me"
-                  heading="Tedane Blake"
-                  subheading={
-                     <>
-                        <ul>
-                           <li><p>An Information Tech. graduate aspiring to a Software/Web Developer.</p></li>
+         <Container>
+            <Heading>Profile</Heading>
+            <ImageCard
+               highlighted="About me"
+               heading="Tedane Blake"
+               subheading={
+                  <>
+                     <ul>
+                        <li><p>An Information Tech. graduate aspiring to be a Software/Web Developer.</p></li>
 
-                        </ul>
-                        <ul>
+                     </ul>
+                     <ul>
 
-                           <li><p>B.S. Degree Program in Computer Programming Inf. Sys, Farmingdale State College, Farmingdale, NY</p></li>
-                        </ul>
-                     </>
+                        <li><p>B.S. Degree Program in Computer Programming Inf. Sys, Farmingdale State College, Farmingdale, NY</p></li>
+                        <li><p>A.S. Degree Information Technology, Nassau Community College, Garden City, NY</p></li>
+                     </ul>
+                  </>
 
-                  }
-                  src={profile}
+               }
+               src={profile}
 
-               />
-            </Container>
-         </Slide>
+            />
+         </Container>
+
          <div id="tech"></div>
-         <Fade >
-            <Container  >
-               <Heading>Technologies</Heading>
-               <CardsWrapper >
-                  {techCards.map((e, index) => (
-                     <Card key={index} icon={e.icon} title={e.title} />
-                  ))}
-               </CardsWrapper>
-            </Container>
-         </Fade>
+
+         <Container  >
+            <Heading>Technologies</Heading>
+            <CardsWrapper >
+               {techCards.map((e, index) => (
+                  <Card key={index} icon={e.icon} title={e.title} />
+               ))}
+            </CardsWrapper>
+         </Container>
+
          <div id="projects"></div>
          <Container>
             <Heading>Projects</Heading>
