@@ -1,6 +1,6 @@
-import projectOneImg from '../images/project1.png'
-import projectTwoImg from '../images/project2.png'
-import projectThreeImg from '../images/project3.png'
+import projectOneImg from '../images/project1.jpg'
+import projectTwoImg from '../images/project2.jpg'
+import projectThreeImg from '../images/project3.jpg'
 
 export const projectsData = [
    {

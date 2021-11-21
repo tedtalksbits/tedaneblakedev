@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { themeColors } from '../../data/appColors'
-import headerImg from '../../images/floatingman.png'
+import headerImg from '../../images/floatingmancompressed.png'
 import { mixin } from '../NavBar/NavBar'
 import { Button } from '../utils/mainComponents'
 
