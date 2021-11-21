@@ -1,15 +1,12 @@
 import React from 'react'
-import { CardsWrapper } from '../components/Card/Card';
-import Card from '../components/Card/Card'
 import ImageCard from '../components/ImageCard/ImageCard'
 import { Container, MainContentWrapper } from '../components/utils/mainComponents'
 import profile from '../images/tedaneprofile.JPG';
-import ScrollableCards from '../components/ScrollableCards/ScrollableCards';
-import { techCards } from '../data/techCardData'
 import styled from 'styled-components';
 import { themeColors } from '../data/appColors';
+import IconBox from '../components/IconBox';
 
-const Heading = styled.h1`
+export const Heading = styled.h1`
    margin-bottom: 1.6rem;
    color: ${themeColors.secondary};
    font-weight: 500;
@@ -43,22 +40,22 @@ const InfoSection = ({ primary_05 }) => {
             />
          </Container>
 
-         <div id="tech"></div>
+         <div className="socials" style={{ display: 'flex' }}>
+            <a href="https://twitter.com/iam_tcb">
 
-         <Container  >
-            <Heading>Technologies</Heading>
-            <CardsWrapper >
-               {techCards.map((e, index) => (
-                  <Card key={index} icon={e.icon} title={e.title} />
-               ))}
-            </CardsWrapper>
-         </Container>
+               <IconBox icon="bx bxl-twitter" hovertext="Go" background={themeColors.primary} />
+            </a>
+            <a href="https://github.com/tedtalksbits">
 
-         <div id="projects"></div>
-         <Container>
-            <Heading>Projects</Heading>
-            <ScrollableCards style={{ margin: '0' }} />
-         </Container>
+               <IconBox icon="bx bxl-github" hovertext="Go" background={themeColors.primary} />
+            </a>
+            <a href="https://www.linkedin.com/in/tedane-blake-042918158/">
+
+               <IconBox icon="bx bxl-linkedin" hovertext="Go" background={themeColors.primary} />
+            </a>
+         </div>
+
+
       </MainContentWrapper>
    )
 }

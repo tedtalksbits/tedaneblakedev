@@ -53,7 +53,7 @@ const Footer = ({ primary }) => {
          <ScrollUpContainer>
             <a href="#top">
                <IconBox
-                  icon={<i className='bx bx-up-arrow-alt' ></i>}
+                  icon='bx bx-up-arrow-alt'
                   background={primary}
                   hovertext="top"
                />
@@ -97,6 +97,7 @@ const Footer = ({ primary }) => {
             <ul>
                <li><h3>Blog</h3></li>
                <li>Coming Soon...</li>
+               <li>Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></li>
             </ul>
 
          </Colomn>

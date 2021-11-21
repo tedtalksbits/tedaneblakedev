@@ -14,7 +14,7 @@ const GlassCard = styled.div`
    min-height: 150px;
    min-width: 250px;
    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-   position: absolute;
+   position: relative;
    z-index: 20;
    left: ${props => props.left}%;
    right: ${props => props.right}%;
@@ -33,7 +33,7 @@ const GlassCard = styled.div`
 const AnimationDiv = styled.div`
 
 `
-const GlassMorpCard = ({ background, borderColor, isHeaderCard, left, right, bottom, top, component, hideOnMobile, animation }) => {
+const GlassMorpCard = ({ background, borderColor, isHeaderCard, left, right, bottom, top, children, hideOnMobile, animation }) => {
 
    return (
       <GlassCard
@@ -46,7 +46,7 @@ const GlassMorpCard = ({ background, borderColor, isHeaderCard, left, right, bot
          hideOnMobile={hideOnMobile}
       >
          <AnimationDiv className={`animate__animated ${animation}`}>
-            {component}
+            {children}
          </AnimationDiv>
       </GlassCard>
    )

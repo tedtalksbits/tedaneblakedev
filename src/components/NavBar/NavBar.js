@@ -56,17 +56,45 @@ const NavLinks = styled.div`
 `
 const NavLinkItem = styled.a`
    padding: .4rem 1.5rem;
-   border: 1px white solid;
-   border-radius: ${bRadius};
+   position: relative;
+   /* border-bottom: 1px ${themeColors.white_40} solid; */
    font-size: 1.875rem;
    transition: .4s ease all;
+   color: ${themeColors.white_60};
 
    @media  screen and (min-width: ${mixin}){
       font-size: .9rem;
    }
-   :hover, &.active{
-      background: ${themeColors.white_80};
-      color: ${themeColors.gradientDark}
+   :hover {
+      
+      color: ${themeColors.white}
+   }
+   &.active {
+      /* border-bottom: 2px ${themeColors.primary} solid; */
+      color: ${themeColors.white};
+      ::after{
+         content: '';
+         width: 7px;
+         height: 7px;
+         position: absolute;
+         background: ${themeColors.primary};
+         /* top: 0; */
+         left: 50%;
+         border-radius: 20px;
+         animation: dot .4s linear forwards;
+
+         @keyframes dot{
+            0%{
+               opacity: 0;
+               bottom: -20px;
+            }
+            100%{
+               opacity: 1;
+               bottom: -5px;
+            }
+         }
+
+      }
    }
 `
 const MobileMenu = styled.div`

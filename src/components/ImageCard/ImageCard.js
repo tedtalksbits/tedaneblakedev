@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { themeColors } from '../../data/appColors'
-import { mixin } from '../NavBar/NavBar'
 
 const ImageCardContainer = styled.div`
 
@@ -18,8 +17,6 @@ const ImageCardContainer = styled.div`
 `
 
 const CardImage = styled.div`
-   /* overflow: hidden;
-   border-radius: 20px; */
    
    max-height: 340px;
 `
@@ -31,24 +28,12 @@ const Image = styled.img`
    object-fit: cover;
    filter: grayscale(1);
    border-radius: 3rem 31% 38px 15rem;
-  
-/* 
-   animation: border-transform 30s linear infinite alternate forwards;
 
-   @keyframes border-transform{
-    0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
-	14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
-	28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
-	42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
-	56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
-	70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
-	84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
-} */
 
 `
 
 const CardText = styled.div`
-   /* max-width: 60%; */
+
 
 `
 

@@ -32,7 +32,7 @@ export const techCards = [
 
    },
    {
-      icon: <i class="devicon-cplusplus-plain"></i>,
+      icon: <i className="devicon-cplusplus-plain"></i>,
       title: 'C++',
       text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio magnam ut qui earum, dolorem cum!',
       background: '',
@@ -40,7 +40,7 @@ export const techCards = [
 
    },
    {
-      icon: <i class="devicon-mysql-plain"></i>,
+      icon: <i className="devicon-mysql-plain"></i>,
       title: 'MySql',
       text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio magnam ut qui earum, dolorem cum!',
       background: '',
@@ -48,7 +48,7 @@ export const techCards = [
 
    },
    {
-      icon: <i class="devicon-php-plain"></i>,
+      icon: <i className="devicon-php-plain"></i>,
       title: 'Php',
       text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio magnam ut qui earum, dolorem cum!',
       background: '',
@@ -56,7 +56,7 @@ export const techCards = [
 
    },
    {
-      icon: <i class="devicon-java-plain"></i>,
+      icon: <i className="devicon-java-plain"></i>,
       title: 'Java',
       text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio magnam ut qui earum, dolorem cum!',
       background: '',

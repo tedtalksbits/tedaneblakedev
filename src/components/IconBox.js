@@ -15,6 +15,8 @@ const InnerBox = styled.div`
    place-items: center;
    cursor: pointer;
    backdrop-filter: blur(12px);
+   margin: .35rem;
+
 
 
    span{
@@ -58,7 +60,7 @@ const Icon = styled.div`
 const IconBox = ({ background, icon, hovertext }) => {
    return (
       <InnerBox background={background}>
-         <Icon>{icon}</Icon>
+         <Icon><i className={icon}></i></Icon>
          <span>{hovertext}</span>
       </InnerBox>
    )

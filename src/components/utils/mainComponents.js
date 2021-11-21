@@ -9,7 +9,9 @@ export const MainContentWrapper = styled.div`
    color: ${props => props.color};
    transition: .3s all;
    width: 100%;
-   padding: 4.5rem 1rem 0;
+   padding: 2rem 1rem;
+   margin: 4rem 0;
+   min-height: 50vh;
 
    > * input{
       color: ${props => props.color};
@@ -37,4 +39,24 @@ export const Container = styled.div`
    @media screen and (max-width: ${mixin}){
       margin: 6.5rem 0;
    }
+`
+
+export const Button = styled.a`
+
+   background: ${props => props.background + "a6"};
+   padding: .675rem 2.2rem;
+   border-radius: 1rem;
+   display: block;
+   place-items: center;
+   border: 1px solid ${props => props.background};
+   transition: all ease-in-out .2s;
+   cursor: pointer;
+   backdrop-filter: blur(12px);
+   text-align: center;
+
+   :hover{
+      background: ${props => props.hoverBackground + "a6"}; 
+      border: 1px solid ${props => props.hoverBackground};
+   }
+
 `

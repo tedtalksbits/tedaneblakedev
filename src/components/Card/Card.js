@@ -6,13 +6,13 @@ import { themeColors } from '../../data/appColors'
 
 export const CardsWrapper = styled.div`
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(${props => props.size}, 1fr));
    grid-gap: 1rem;
 
    
    img {
    width: 100%;
-   height: 200px;
+   height: 300px;
    object-fit:cover;
    }
 
