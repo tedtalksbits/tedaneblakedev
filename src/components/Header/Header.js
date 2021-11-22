@@ -8,7 +8,7 @@ import { Button } from '../utils/mainComponents'
 const Container = styled.header`
    max-width: 1200px;
    margin: 0 auto;
-   padding-top: 4rem;
+   padding: 4rem 1.4rem 0;
    min-height: 100vh;
    display: grid;
    grid-template-columns: .7fr 1.3fr;
@@ -33,6 +33,10 @@ const Container = styled.header`
       padding: 6rem 1rem;
       min-height: 100%;
       gap: 6rem;
+
+      img{
+         max-height: 550px;
+      }
    }
 `
 const Heading = styled.h1`

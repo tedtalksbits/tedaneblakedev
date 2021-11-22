@@ -24,11 +24,11 @@ const ProfileAnimation = styled.div`
    @keyframes show{
          0%{
             opacity: 0;
-            transform: translateX(-20px);
+            transform: translateY(-20px);
          }
          100%{
             opacity: 1;
-            transform: translateX(0);
+            transform: translateY(0);
          }
       }
 
@@ -50,7 +50,7 @@ const InfoSection = ({ primary_05 }) => {
 
          root: null, //use browser as viewport
          rootMarging: '0px',
-         threshold: 0.3 // when 30% is visible
+         threshold: .1 // when 10% is visible
       }
    }, []);
 
