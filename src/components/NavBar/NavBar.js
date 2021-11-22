@@ -18,6 +18,7 @@ const Nav = styled.nav`
    display: flex;
    align-items: center;
    z-index: 2000;
+  
    
 
 `
@@ -36,6 +37,7 @@ const NavLinksContainer = styled.div`
    align-items: center;
    justify-content: space-between;
    gap: 2rem;
+
 
 `
 
@@ -211,19 +213,19 @@ const NavBar = ({ white_80, white }) => {
       }, 500)
    }
 
-   // active link
-   const removeClass = () => {
+   // // active link
+   // const removeClass = () => {
 
-      const allLinks = document.querySelectorAll('.my-link');
-      allLinks.forEach(link => link.classList.remove('active'));
-   }
+   //    const allLinks = document.querySelectorAll('.my-link');
+   //    allLinks.forEach(link => link.classList.remove('active'));
+   // }
 
 
-   const handleActive = (e) => {
-      removeClass()
-      e.target.classList.add('active')
+   // const handleActive = (e) => {
+   //    removeClass()
+   //    e.target.classList.add('active')
 
-   }
+   // }
 
 
 
@@ -252,7 +254,7 @@ const NavBar = ({ white_80, white }) => {
             <NavLinksContainer>
                <NavLinks>
                   {links.map((link, index) => (
-                     <NavLinkItem href={link.href} key={index} className={link.class} onClick={handleActive}>{link.title}</NavLinkItem>
+                     <NavLinkItem href={link.href} key={index} className={link.class} >{link.title}</NavLinkItem>
                   ))}
                </NavLinks>
                <MobileMenu onClick={handleOpen}>
