@@ -6,7 +6,6 @@ import styled from 'styled-components';
 import { themeColors } from '../data/appColors';
 import IconBox from '../components/IconBox';
 import { useEffect } from 'react';
-import Anime from 'react-anime';
 
 export const Heading = styled.h1`
    margin-bottom: 1.6rem;
@@ -14,10 +13,15 @@ export const Heading = styled.h1`
    font-weight: 500;
 `
 const ProfileAnimation = styled.div`
+   opacity: 0;
+   transition: all .4s linear;
 
    &.inView{
-      animation: show .6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      @keyframes show{
+      animation: show .6s cubic-bezier(0.4, 0, 0.2, 1) forwards .2s;
+     
+   }
+  
+   @keyframes show{
          0%{
             opacity: 0;
             transform: translateX(-20px);
@@ -27,7 +31,6 @@ const ProfileAnimation = styled.div`
             transform: translateX(0);
          }
       }
-   }
 
 `
 const InfoSection = ({ primary_05 }) => {
@@ -68,65 +71,51 @@ const InfoSection = ({ primary_05 }) => {
    return (
       <MainContentWrapper style={{ height: '100%', background: `${primary_05}` }} id='info' className="section info_section" ref={targetRef}>
 
+         <ProfileAnimation className={`profile-card ${isVisible && 'inView'}`}>
+            <Container>
 
-         {isVisible &&
-            <>
-               <Container>
-
-
-                  <Heading>Profile</Heading>
-                  <ProfileAnimation className='inView'>
-
-                     <ImageCard
-                        highlighted="About me"
-                        heading="Tedane Blake"
-                        subheading={
-                           <>
-
-                              <ul>
-                                 <li><p>An Information Tech. graduate aspiring to be a Software/Web Developer.</p></li>
-
-                              </ul>
-                              <ul>
-
-                                 <li><p>B.S. Degree Program in Computer Programming Inf. Sys, Farmingdale State College, Farmingdale, NY</p></li>
-                                 <li><p>A.S. Degree Information Technology, Nassau Community College, Garden City, NY</p></li>
-                              </ul>
-                           </>
-
-                        }
-                        src={profile}
-
-                     />
-                  </ProfileAnimation>
-               </Container>
-               <div className="socials" style={{ display: 'flex' }}>
-                  <Anime
-                     opacity={[0, 1]}
-                     translateX={['0', '1em']}
-                     delay={(e, i) => i * 200}
-                  >
-                     <a href="https://twitter.com/iam_tcb">
-
-                        <IconBox icon="bx bxl-twitter" hovertext="Go" background={themeColors.primary} />
-                     </a>
-                     <a href="https://github.com/tedtalksbits">
-
-                        <IconBox icon="bx bxl-github" hovertext="Go" background={themeColors.primary} />
-                     </a>
-                     <a href="https://www.linkedin.com/in/tedane-blake-042918158/">
-
-                        <IconBox icon="bx bxl-linkedin" hovertext="Go" background={themeColors.primary} />
-                     </a>
-                  </Anime>
-               </div>
-            </>
-         }
+               <Heading>Profile</Heading>
 
 
+               <ImageCard
+                  highlighted="About me"
+                  heading="Tedane Blake"
+                  subheading={
+                     <>
 
+                        <ul>
+                           <li><p>An Information Tech. graduate aspiring to be a Software/Web Developer.</p></li>
 
+                        </ul>
+                        <ul>
 
+                           <li><p>B.S. Degree Program in Computer Programming Inf. Sys, Farmingdale State College, Farmingdale, NY</p></li>
+                           <li><p>A.S. Degree Information Technology, Nassau Community College, Garden City, NY</p></li>
+                        </ul>
+                     </>
+
+                  }
+                  src={profile}
+               />
+
+            </Container>
+            <div className="socials" style={{ display: 'flex' }}>
+
+               <a href="https://twitter.com/iam_tcb">
+
+                  <IconBox icon="bx bxl-twitter" hovertext="Go" background={themeColors.primary} />
+               </a>
+               <a href="https://github.com/tedtalksbits">
+
+                  <IconBox icon="bx bxl-github" hovertext="Go" background={themeColors.primary} />
+               </a>
+               <a href="https://www.linkedin.com/in/tedane-blake-042918158/">
+
+                  <IconBox icon="bx bxl-linkedin" hovertext="Go" background={themeColors.primary} />
+               </a>
+
+            </div>
+         </ProfileAnimation>
 
 
       </MainContentWrapper>
