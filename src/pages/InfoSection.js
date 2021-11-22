@@ -69,58 +69,64 @@ const InfoSection = ({ primary_05 }) => {
       <MainContentWrapper style={{ height: '100%', background: `${primary_05}` }} id='info' className="section info_section" ref={targetRef}>
 
 
-         <Container>
-            <Heading>Profile</Heading>
-            <ProfileAnimation className={`${isVisible && 'inView'}`}>
-
-               <ImageCard
-                  highlighted="About me"
-                  heading="Tedane Blake"
-                  subheading={
-                     <>
-
-                        <ul>
-                           <li><p>An Information Tech. graduate aspiring to be a Software/Web Developer.</p></li>
-
-                        </ul>
-                        <ul>
-
-                           <li><p>B.S. Degree Program in Computer Programming Inf. Sys, Farmingdale State College, Farmingdale, NY</p></li>
-                           <li><p>A.S. Degree Information Technology, Nassau Community College, Garden City, NY</p></li>
-                        </ul>
-                     </>
-
-                  }
-                  src={profile}
-
-               />
-            </ProfileAnimation>
-         </Container>
-
          {isVisible &&
+            <>
+               <Container>
 
 
-            <div className="socials" style={{ display: 'flex' }}>
-               <Anime
-                  opacity={[0, 1]}
-                  translateX={['0', '1em']}
-                  delay={(e, i) => i * 200}
-               >
-                  <a href="https://twitter.com/iam_tcb">
+                  <Heading>Profile</Heading>
+                  <ProfileAnimation className='inView'>
 
-                     <IconBox icon="bx bxl-twitter" hovertext="Go" background={themeColors.primary} />
-                  </a>
-                  <a href="https://github.com/tedtalksbits">
+                     <ImageCard
+                        highlighted="About me"
+                        heading="Tedane Blake"
+                        subheading={
+                           <>
 
-                     <IconBox icon="bx bxl-github" hovertext="Go" background={themeColors.primary} />
-                  </a>
-                  <a href="https://www.linkedin.com/in/tedane-blake-042918158/">
+                              <ul>
+                                 <li><p>An Information Tech. graduate aspiring to be a Software/Web Developer.</p></li>
 
-                     <IconBox icon="bx bxl-linkedin" hovertext="Go" background={themeColors.primary} />
-                  </a>
-               </Anime>
-            </div>
+                              </ul>
+                              <ul>
+
+                                 <li><p>B.S. Degree Program in Computer Programming Inf. Sys, Farmingdale State College, Farmingdale, NY</p></li>
+                                 <li><p>A.S. Degree Information Technology, Nassau Community College, Garden City, NY</p></li>
+                              </ul>
+                           </>
+
+                        }
+                        src={profile}
+
+                     />
+                  </ProfileAnimation>
+               </Container>
+               <div className="socials" style={{ display: 'flex' }}>
+                  <Anime
+                     opacity={[0, 1]}
+                     translateX={['0', '1em']}
+                     delay={(e, i) => i * 200}
+                  >
+                     <a href="https://twitter.com/iam_tcb">
+
+                        <IconBox icon="bx bxl-twitter" hovertext="Go" background={themeColors.primary} />
+                     </a>
+                     <a href="https://github.com/tedtalksbits">
+
+                        <IconBox icon="bx bxl-github" hovertext="Go" background={themeColors.primary} />
+                     </a>
+                     <a href="https://www.linkedin.com/in/tedane-blake-042918158/">
+
+                        <IconBox icon="bx bxl-linkedin" hovertext="Go" background={themeColors.primary} />
+                     </a>
+                  </Anime>
+               </div>
+            </>
          }
+
+
+
+
+
 
 
       </MainContentWrapper>
