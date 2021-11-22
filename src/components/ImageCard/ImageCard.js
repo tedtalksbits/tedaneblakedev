@@ -1,4 +1,5 @@
 import React from 'react'
+import Anime from 'react-anime'
 import styled from 'styled-components'
 import { themeColors } from '../../data/appColors'
 
@@ -62,7 +63,9 @@ const ImageCard = ({ src, heading, subheading, highlighted }) => {
          <CardText>
             <CardTextHighlighted>{highlighted}</CardTextHighlighted>
             <CardHeading>{heading}</CardHeading>
-            <CardSubHeading>{subheading}</CardSubHeading>
+            <CardSubHeading>
+               {subheading}
+            </CardSubHeading>
          </CardText>
 
       </ImageCardContainer>

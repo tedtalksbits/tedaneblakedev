@@ -24,11 +24,9 @@ const scrollSpy = () => {
          }
 
       });
-      console.log(currentSection);
+      // console.log(currentSection);
 
    })
-
-
 
 }
 

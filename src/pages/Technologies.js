@@ -4,6 +4,7 @@ import { techCards } from '../data/techCardData'
 import styled from 'styled-components'
 import { themeColors } from '../data/appColors'
 import { Heading } from './InfoSection'
+import Anime from 'react-anime'
 
 
 const IconsScrollWrapper = styled.div`
@@ -42,12 +43,17 @@ const Technologies = () => {
          <IconsScrollWrapper>
 
             <IconsContainer>
-
-               {techCards.map((tech, key) => (
-                  <IconDiv key={key}>
-                     {tech.icon}
-                  </IconDiv>
-               ))}
+               <Anime
+                  opacity={[0, 1]}
+                  translateY={['0', '1em']}
+                  delay={(e, i) => i * 200}
+               >
+                  {techCards.map((tech, key) => (
+                     <IconDiv key={key}>
+                        {tech.icon}
+                     </IconDiv>
+                  ))}
+               </Anime>
             </IconsContainer>
          </IconsScrollWrapper>
       </MainContentWrapper>
