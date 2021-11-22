@@ -2,9 +2,9 @@ const scrollSpy = () => {
 
 
 
-   const sections = document.querySelectorAll('.section');
 
    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('.section');
       let currentSection = '';
       let value = window.scrollY;
       sections.forEach(section => {
