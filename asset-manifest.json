@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tedaneblakedev/static/css/main.7e3d1a82.chunk.css",
-    "main.js": "/tedaneblakedev/static/js/main.988a2f4b.chunk.js",
-    "main.js.map": "/tedaneblakedev/static/js/main.988a2f4b.chunk.js.map",
+    "main.js": "/tedaneblakedev/static/js/main.9d87835f.chunk.js",
+    "main.js.map": "/tedaneblakedev/static/js/main.9d87835f.chunk.js.map",
     "runtime-main.js": "/tedaneblakedev/static/js/runtime-main.2bd7601e.js",
     "runtime-main.js.map": "/tedaneblakedev/static/js/runtime-main.2bd7601e.js.map",
     "static/js/2.0ec44335.chunk.js": "/tedaneblakedev/static/js/2.0ec44335.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.2bd7601e.js",
     "static/js/2.0ec44335.chunk.js",
     "static/css/main.7e3d1a82.chunk.css",
-    "static/js/main.988a2f4b.chunk.js"
+    "static/js/main.9d87835f.chunk.js"
   ]
 }
