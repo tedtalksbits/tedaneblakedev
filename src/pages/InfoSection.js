@@ -12,8 +12,9 @@ export const Heading = styled.h1`
    font-weight: 500;
 `
 const InfoSection = ({ primary_05 }) => {
+
    return (
-      <MainContentWrapper style={{ height: '100%', background: `${primary_05}` }} id='info'>
+      <MainContentWrapper style={{ height: '100%', background: `${primary_05}` }} id='info' className="section">
 
 
          <Container>

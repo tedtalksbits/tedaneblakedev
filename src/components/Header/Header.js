@@ -45,7 +45,7 @@ const SubHeading = styled.p`
 `
 const Header = () => {
    return (
-      <Container>
+      <Container className="section" id='home'>
          <div className="text">
             <Heading>Hello, I'm Tedane.</Heading>
             <SubHeading>A Full-Stack Web Developer and Meditation Enthusiast.</SubHeading>

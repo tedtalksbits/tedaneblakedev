@@ -1,27 +1,27 @@
 export const links = [
    {
       title: "Home",
-      href: '#top',
-      class: 'active my-link'
+      href: '#home',
+      class: 'active my-link home'
    },
    {
       title: "About",
       href: '#info',
-      class: 'my-link'
+      class: 'my-link info'
    },
    {
       title: "Tech",
       href: '#tech',
-      class: 'my-link'
+      class: 'my-link tech'
    },
    {
       title: "Projects",
       href: '#projects',
-      class: 'my-link'
+      class: 'my-link projects'
    },
    {
       title: "Contact",
-      href: '#bottom',
-      class: 'my-link'
+      href: '#contact',
+      class: 'my-link contact'
    },
 ]

@@ -47,7 +47,7 @@ const ScrollUpContainer = styled.div`
 `
 const Footer = ({ primary }) => {
    return (
-      <FooterContainer id="bottom" >
+      <FooterContainer  >
 
 
          <ScrollUpContainer>
@@ -66,17 +66,17 @@ const Footer = ({ primary }) => {
                <li><h3>Contact</h3></li>
                <li>
                   <a href="mailto:blakt7@farmindale.edu" id="email" >Email</a>
-                  <i class='bx bx-mail-send'></i>
+                  <i className='bx bx-mail-send'></i>
                </li>
                <li>
-                  <a href="">LinkedIn</a>
-                  <i class='bx bxl-linkedin-square' ></i>
+                  <a href="linkedin.com">LinkedIn</a>
+                  <i className='bx bxl-linkedin-square' ></i>
                </li>
                <li>
                   <a href="https://paypal.me/tedtalks190?country.x=US&locale.x=en_US">
                      Buy Me Coffee
                   </a>
-                  <i class='bx bx-coffee-togo' ></i>
+                  <i className='bx bx-coffee-togo' ></i>
                </li>
             </ul>
          </Colomn>

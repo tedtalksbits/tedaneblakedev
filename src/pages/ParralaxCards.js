@@ -14,6 +14,7 @@ const Project = styled.div`
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   max-height: 550px;
 
 
    :hover{
@@ -49,7 +50,12 @@ const TextContainer = styled.div`
 `
 const ParralaxCards = () => {
    return (
-      <MainContentWrapper background={`linear-gradient(90deg, ${themeColors.primary} 0%, #764ba2 100%)`} id="projects">
+      <MainContentWrapper
+         background={`linear-gradient(90deg, ${themeColors.primary} 0%, #764ba2 100%)`}
+         id="projects"
+         className="section"
+         style={{ minHeight: '100vh' }}
+      >
          <Heading style={{ color: themeColors.white }}>Projects</Heading>
          <CardsWrapper size="350px">
 
@@ -71,7 +77,7 @@ const ParralaxCards = () => {
                   </TextContainer>
                   <Button
                      background={themeColors.secondary}
-                     hoverBackground={themeColors.black}
+                     hoverBackground={themeColors.white}
                      href={project.link}>View
                   </Button>
                </Project>

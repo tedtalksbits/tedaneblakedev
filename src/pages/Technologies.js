@@ -37,7 +37,7 @@ const IconDiv = styled.div`
 `
 const Technologies = () => {
    return (
-      <MainContentWrapper id="tech">
+      <MainContentWrapper id="tech" className="section">
          <Heading>Technologies</Heading>
          <IconsScrollWrapper>
 

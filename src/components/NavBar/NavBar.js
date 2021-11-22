@@ -212,7 +212,6 @@ const NavBar = ({ white_80, white }) => {
    }
 
    // active link
-
    const removeClass = () => {
 
       const allLinks = document.querySelectorAll('.my-link');
@@ -225,6 +224,8 @@ const NavBar = ({ white_80, white }) => {
       e.target.classList.add('active')
 
    }
+
+
 
 
    return (
