@@ -9,8 +9,8 @@ import { useEffect } from 'react';
 
 export const Heading = styled.h1`
    margin-bottom: 1.6rem;
-   color: ${themeColors.secondary};
-   font-weight: 500;
+   color: ${themeColors.white};
+   font-weight: 700;
 `
 const ProfileAnimation = styled.div`
    opacity: 0;

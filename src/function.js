@@ -5,8 +5,18 @@ const scrollSpy = () => {
 
    window.addEventListener('scroll', () => {
       const sections = document.querySelectorAll('.section');
+      const navbar = document.getElementById("navbar");
       let currentSection = '';
       let value = window.scrollY;
+
+      if (value < 900) {
+         navbar.style.background = "transparent";
+      }
+      else {
+         navbar.style.background = "#000000a1";
+      }
+
+
       sections.forEach(section => {
 
          const sectionHeight = section.clientHeight;

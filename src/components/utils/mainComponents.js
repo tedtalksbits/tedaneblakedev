@@ -53,10 +53,12 @@ export const Button = styled.a`
    cursor: pointer;
    backdrop-filter: blur(12px);
    text-align: center;
+   color: ${props => props.color};
 
    :hover{
-      background: ${props => props.hoverBackground + "a6"}; 
+      background: ${props => props.hoverBackground}; 
       border: 1px solid ${props => props.hoverBackground};
+      color: ${props => props.hoverColor};
    }
 
 `

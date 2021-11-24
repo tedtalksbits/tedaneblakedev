@@ -9,7 +9,6 @@ export const mixin = '940px';
 export const bRadius = '12px';
 
 const Nav = styled.nav`
-   /* background: ${props => props.background}; */
    position: fixed;
    width: 100%;
    height: 70px;
@@ -17,9 +16,8 @@ const Nav = styled.nav`
    backdrop-filter: blur(100px);
    display: flex;
    align-items: center;
-   z-index: 2000;
-  
-   
+   z-index: 2000; 
+   transition: background 2s ease;
 
 `
 const NavContainer = styled.div`
@@ -48,7 +46,7 @@ const NavLinks = styled.div`
    font-size: 1.2rem;
    transition: .3s;
    display: none;
-   backdrop-filter: blur(25px) saturate(6);
+   /* backdrop-filter: blur(25px) saturate(6); */
    
 
    @media screen and (min-width: ${mixin}){
@@ -59,7 +57,6 @@ const NavLinks = styled.div`
 const NavLinkItem = styled.a`
    padding: .4rem 1.5rem;
    position: relative;
-   /* border-bottom: 1px ${themeColors.white_40} solid; */
    font-size: 1.875rem;
    transition: .4s ease all;
    color: ${themeColors.white_60};
@@ -72,7 +69,6 @@ const NavLinkItem = styled.a`
       color: ${themeColors.white}
    }
    &.active {
-      /* border-bottom: 2px ${themeColors.primary} solid; */
       color: ${themeColors.white};
       ::after{
          content: '';
@@ -80,7 +76,6 @@ const NavLinkItem = styled.a`
          height: 7px;
          position: absolute;
          background: ${themeColors.primary};
-         /* top: 0; */
          left: 50%;
          border-radius: 20px;
          animation: dot .4s linear forwards;
@@ -213,25 +208,9 @@ const NavBar = ({ white_80, white }) => {
       }, 500)
    }
 
-   // // active link
-   // const removeClass = () => {
-
-   //    const allLinks = document.querySelectorAll('.my-link');
-   //    allLinks.forEach(link => link.classList.remove('active'));
-   // }
-
-
-   // const handleActive = (e) => {
-   //    removeClass()
-   //    e.target.classList.add('active')
-
-   // }
-
-
-
 
    return (
-      <Nav background={white_80} >
+      <Nav background={white_80} className="navbar nav" id="navbar" >
          <MobileLinksContainer openMobile={isOpen} className='animate__animated animate__slideInRight mobile__container'>
 
             <MobileLinks className="mobile-links-container" onClick={handleClose}  >

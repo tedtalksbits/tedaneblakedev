@@ -54,7 +54,7 @@ const Header = () => {
             <Heading>Hello, I'm Tedane.</Heading>
             <SubHeading>A Full-Stack Web Developer and Meditation Enthusiast.</SubHeading>
             <div className="button-container" style={{ display: 'flex', justifyContent: 'start' }}>
-               <Button background={themeColors.primary} hoverBackground={themeColors.secondary} href="#info">Learn More <i className='bx bx-right-arrow-alt' ></i></Button>
+               <Button background={themeColors.primary} hoverBackground={themeColors.primary} href="#info">About Me <i className='bx bx-right-arrow-alt' ></i></Button>
             </div>
          </div>
          <div className="img">

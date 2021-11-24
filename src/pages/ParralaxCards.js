@@ -77,7 +77,8 @@ const ParralaxCards = () => {
                   </TextContainer>
                   <Button
                      background={themeColors.secondary}
-                     hoverBackground={themeColors.white}
+                     hoverBackground={themeColors.secondary}
+                     hoverColor={themeColors.black}
                      href={project.link}>View
                   </Button>
                </Project>
