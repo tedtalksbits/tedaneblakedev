@@ -53,6 +53,10 @@ export const TextArea = styled.textarea`
       /* border: 1px ${themeColors.primary} solid; */
       outline: 1px ${themeColors.primary} solid;
    }
+   :placeholder{
+      color: ${themeColors.white_40};
+      font-size: .875em;
+   }
 
 `
 
