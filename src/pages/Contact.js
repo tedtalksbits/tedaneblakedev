@@ -18,9 +18,9 @@ const Contact = () => {
                   <Input type="email" placeholder="email" required />
                </InputContainer>
 
-               <TextArea rows="12" required />
+               <TextArea rows="12" required placeholder="message" />
                <div className="submit" style={{ margin: '2rem 0' }}>
-                  <FormButton background={themeColors.primary} hoverBackground={themeColors.primary} color={themeColors.white_80} hoverColor={themeColors.white} type="submit" value="submit" />
+                  <FormButton background={themeColors.primary} hoverBackground={themeColors.primary} color={themeColors.white_80} hoverColor={themeColors.white} type="submit" >Send</FormButton>
                </div>
 
             </form>

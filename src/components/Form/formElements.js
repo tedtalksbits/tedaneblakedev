@@ -56,7 +56,7 @@ export const TextArea = styled.textarea`
 
 `
 
-export const FormButton = styled.input`
+export const FormButton = styled.button`
 
    background: ${props => props.background + "a6"};
    padding: .675rem 2.2rem;
