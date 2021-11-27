@@ -60,7 +60,7 @@ const Contact = () => {
 
             <form className="form" style={{ maxWidth: '600px', display: 'flex', flexDirection: 'column', width: '100%' }}>
 
-               <p style={{ marginBottom: '30px', color: themeColors.white_60, fontWeight: 200 }}>Have Questions? Ask Me Anything!</p>
+               <p style={{ marginBottom: '30px', color: themeColors.white_60, fontWeight: 300 }}>Have Questions? Ask Me Anything!</p>
                <InputContainer className="parent">
                   <Input type="text" placeholder="name" required />
                </InputContainer>

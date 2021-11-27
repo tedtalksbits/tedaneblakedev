@@ -9,7 +9,7 @@ export const MainContentWrapper = styled.div`
    color: ${props => props.color};
    transition: .3s all;
    width: 100%;
-   padding: 2rem 1rem;
+   padding: 4rem 1rem;
    /* margin: 4rem 0; */
    min-height: 50vh;
 
@@ -67,7 +67,8 @@ export const ResponsiveGrid = styled.div`
 
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   grid-gap: 1rem;
+   grid-gap: 1.3rem;
+   margin: 5rem 0;
    
    /* img {
       width: 100%;

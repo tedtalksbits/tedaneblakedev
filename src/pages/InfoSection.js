@@ -15,6 +15,12 @@ export const Heading = styled.h1`
 const ProfileAnimation = styled.div`
    opacity: 0;
    transition: all .4s linear;
+   display: flex; 
+   flex-direction: column;
+
+   .socials{
+      margin-left: auto;
+   }
 
    &.inView{
       animation: show .6s cubic-bezier(0.4, 0, 0.2, 1) forwards .2s;
