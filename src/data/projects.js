@@ -8,20 +8,26 @@ export const projectsData = [
       title: 'React Blog',
       techs: ["react", "styled-components", "Node JS", "API", "MongoDB"],
       link: 'https://github.com/tedtalksbits/react-blog',
-      id: "left_card"
+      id: "left_card",
+      desc: "A blog built with react that showcases many of the basic principles of a modern web app.",
+      type: "Web App"
    },
    {
       preview: projectTwoImg,
       title: 'Custom UI Elements',
       techs: ["react", "styled-components", "react hooks", "Custom Theming"],
       link: 'https://github.com/tedtalksbits/react-dashboard-refactor',
-      id: 'center_card'
+      id: 'center_card',
+      desc: "Using custom themes, this basic app was done to show case color theory as well as theme switching.",
+      type: "Web App"
    },
    {
       preview: projectThreeImg,
       title: 'Modern Blackboard',
-      techs: ["react", "styled-components", "API"],
+      techs: ["react", "styled-components", "Rest API", "JSON Server"],
       link: 'https://github.com/tedtalksbits/modern-blackboard',
-      id: 'right_card'
+      id: 'right_card',
+      desc: "This is a personal project that aims to eleviate the eye strain on my college's official blackboard.",
+      type: "Web App"
    },
 ]

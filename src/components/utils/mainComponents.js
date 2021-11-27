@@ -10,18 +10,18 @@ export const MainContentWrapper = styled.div`
    transition: .3s all;
    width: 100%;
    padding: 2rem 1rem;
-   margin: 4rem 0;
+   /* margin: 4rem 0; */
    min-height: 50vh;
 
    > * input{
       color: ${props => props.color};
    }
    > * {
-   grid-column: 2;
+      grid-column: 2;
    }
    > *.full-view {
-   width:100%;
-   grid-column: 1 / 4;
+      width:100%;
+      grid-column: 1 / 4;
    }
 
    @media screen and (min-width: 768px){
@@ -61,4 +61,17 @@ export const Button = styled.a`
       color: ${props => props.hoverColor};
    }
 
+`
+
+export const ResponsiveGrid = styled.div`
+
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-gap: 1rem;
+   
+   /* img {
+      width: 100%;
+      height: 200px;
+      object-fit:cover;
+   } */
 `

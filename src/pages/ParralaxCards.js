@@ -1,53 +1,11 @@
 import React from 'react'
 import { CardsWrapper } from '../components/Card/Card'
-import { Button, MainContentWrapper } from '../components/utils/mainComponents'
+import { MainContentWrapper } from '../components/utils/mainComponents'
 import { themeColors } from '../data/appColors'
 import { Heading } from './InfoSection'
 import { projectsData } from '../data/projects'
-import styled from 'styled-components'
+import ImgCard from '../components/Card/ImgCard'
 
-const Project = styled.div`
-   background: ${themeColors.black};
-   padding: 1.4rem;
-   border-radius: 6px;
-   overflow: hidden;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   max-height: 550px;
-
-
-   :hover{
-
-      .img{
-         transform: scale(1.2);
-      }
-   }
-
-   .img{
-      transition: all ease-in-out .3s;
-   }
-
-   
-
-`
-const TextContainer = styled.div`
-
-   margin: 2rem 0;
-
-   .tags{
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 1.2rem;
-      p{
-         color: ${themeColors.white_60};
-         font-size: 12px;
-         margin: 0 .25rem;
-         font-weight: 300;
-      }
-   }
-
-`
 const ParralaxCards = () => {
    return (
       <MainContentWrapper
@@ -57,38 +15,21 @@ const ParralaxCards = () => {
          style={{ minHeight: '100vh' }}
       >
          <Heading style={{ color: themeColors.white }}>Projects</Heading>
-         <CardsWrapper size="350px">
-
+         <CardsWrapper size="300px" style={{ gap: '2.5rem' }}>
             {projectsData.map((project, key) => (
 
-               <Project className="project" id={project.id} key={key}>
+               <ImgCard
+                  key={key}
+                  img={project.preview}
+                  title={project.title}
+                  tags={project.techs}
+                  link={project.link}
+                  desc={project.desc}
+                  type={project.type}
+               />
 
-                  <div className="img">
-                     <img src={project.preview} alt="project preview" />
-                  </div>
-
-                  <TextContainer className="text">
-                     <h3>{project.title}</h3>
-                     <div className="tags">
-                        {project.techs.map((tech, key) => (
-                           <p key={key}>{tech}</p>
-                        ))}
-                     </div>
-                  </TextContainer>
-                  <Button
-                     background={themeColors.secondary}
-                     hoverBackground={themeColors.secondary}
-                     hoverColor={themeColors.black}
-                     href={project.link}>View
-                  </Button>
-               </Project>
             ))}
-
-
-
-
          </CardsWrapper>
-
       </MainContentWrapper>
    )
 }

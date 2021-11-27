@@ -1,17 +1,66 @@
 import React from 'react'
 import { FormButton, Input, InputContainer, TextArea } from '../components/Form/formElements'
-import { Button, MainContentWrapper } from '../components/utils/mainComponents'
+import { MainContentWrapper } from '../components/utils/mainComponents'
 import { themeColors } from '../data/appColors'
+import styled from 'styled-components'
+import leftImage from '../images/gradient-left-dark-next-ui.svg'
+import rightImage from '../images/gradient-right-dark-next-ui.svg'
+import pattern from '../images/positive.png'
 
+const Background = styled.div`
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   mix-blend-mode: multiply;
+   opacity: .4;
+   z-index: 0;
+   background: linear-gradient(transparent, transparent), url(${pattern});
+   grid-column: 1 / 4;
+   
+`
+const BgLeft = styled.div`
+   
+   position: absolute;
+   z-index: 0;
+   top: 0;
+   left: 0;
+  
+   img{
+      width: 100%;
+   }
+   
+`
+const BgRight = styled.div`
+   position: absolute;
+   z-index: 0;
+   top: 0;
+   right: 0;
+   img{
+      width: 100%;
+   }
+   
+`
 const Contact = () => {
    return (
-      <MainContentWrapper id="contact" className="section" style={{ minHeight: '100vh' }}>
-         <h1>Contact</h1>
-         <div className="form-container" style={{ display: 'flex', justifyContent: 'center' }}>
+      <MainContentWrapper id="contact" className="section" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden' }}>
+         <Background className='pattern-bg' />
+         <BgLeft className="left">
+            <img src={leftImage} alt="left gradient" className="left" />
+
+         </BgLeft>
+         <BgRight className="right">
+            <img src={rightImage} alt="left gradient" className="left" />
+
+         </BgRight>
+         <h1 style={{ zIndex: 2 }}>Contact</h1>
+         <div className="form-container" style={{ display: 'flex', justifyContent: 'center', zIndex: 2 }}>
 
             <form className="form" style={{ maxWidth: '600px', display: 'flex', flexDirection: 'column', width: '100%' }}>
 
-               <InputContainer>
+               <InputContainer className="parent">
                   <Input type="text" placeholder="name" required />
                </InputContainer>
                <InputContainer>

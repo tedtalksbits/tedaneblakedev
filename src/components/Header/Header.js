@@ -11,10 +11,12 @@ const Container = styled.header`
    padding: 4rem 1.4rem 0;
    min-height: 100vh;
    display: grid;
-   grid-template-columns: .7fr 1.3fr;
+   grid-template-columns: 1fr 1fr;
    place-items: center;
    gap: 2rem;
-
+   position: relative;
+   
+   
    img{
       width: 100%;
       max-height: 800px;
@@ -40,7 +42,7 @@ const Container = styled.header`
    }
 `
 const Heading = styled.h1`
-   font-size: clamp(5rem, 8vw, 7rem);
+   font-size: clamp(3rem, 8vw, 5.5rem);
 `
 const SubHeading = styled.p`
    margin-bottom: 2.2rem;
@@ -51,10 +53,11 @@ const Header = () => {
    return (
       <Container className="section" id='home'>
          <div className="text">
-            <Heading>Hello, I'm Tedane.</Heading>
+            <Heading>Hi, </Heading>
+            <Heading>I'm Tedane.</Heading>
             <SubHeading>A Full-Stack Web Developer and Meditation Enthusiast.</SubHeading>
             <div className="button-container" style={{ display: 'flex', justifyContent: 'start' }}>
-               <Button background={themeColors.primary} hoverBackground={themeColors.primary} href="#info">About Me <i className='bx bx-right-arrow-alt' ></i></Button>
+               <Button background={themeColors.primary} hoverBackground={themeColors.primary} href="#projects">Projects <i className='bx bx-right-arrow-alt' ></i></Button>
             </div>
          </div>
          <div className="img">

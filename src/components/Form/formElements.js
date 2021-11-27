@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { themeColors } from "../../data/appColors";
-import { mixin } from "../NavBar/NavBar";
+
 
 export const InputContainer = styled.div`
    padding: .75rem 1rem;
    border-radius: 0.28571429rem;
-   background: ${themeColors.white_10};
+   background: ${themeColors.white_40};
    display: flex;
    align-items: center;
    gap: .2rem;
-   border: 1px ${themeColors.white_10} solid;
+   border: 1px ${themeColors.white_20} solid;
    margin: 0 0 1.2rem;
 
    :active, :focus{
@@ -23,21 +23,23 @@ export const Input = styled.input`
    border: none;
    padding: none;
    outline: none;
-   color: white;
+   color: ${themeColors.white};
    width: 100%;
    font-size: 1.5em;
 
    ::placeholder{
-      color: ${themeColors.white_40};
+      color: ${themeColors.white_60};
       font-size: .875em;
    }
+
+   
 `
 
 export const TextArea = styled.textarea`
 
    margin: 0;
    padding: .75rem 1rem;
-   border: none;
+   border: 1px ${themeColors.white_20} solid;
    resize: vertical;
    font-size: 1em;
    min-height: 8rem;
@@ -45,7 +47,7 @@ export const TextArea = styled.textarea`
    border-radius: 0.28571429rem;
    transition: all ease .2s;
    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   background: ${themeColors.white_10};
+   background: ${themeColors.white_40};
    color: ${themeColors.white};
    font-size: 1.5em;
 
@@ -53,8 +55,8 @@ export const TextArea = styled.textarea`
       /* border: 1px ${themeColors.primary} solid; */
       outline: 1px ${themeColors.primary} solid;
    }
-   :placeholder{
-      color: ${themeColors.white_40};
+   ::placeholder{
+      color: ${themeColors.white_60};
       font-size: .875em;
    }
 

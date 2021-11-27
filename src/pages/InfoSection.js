@@ -70,54 +70,38 @@ const InfoSection = ({ primary_05 }) => {
 
    return (
       <MainContentWrapper style={{ height: '100%', background: `${primary_05}` }} id='info' className="section info_section" ref={targetRef}>
-
          <ProfileAnimation className={`profile-card ${isVisible && 'inView'}`}>
             <Container>
-
                <Heading>Profile</Heading>
-
-
                <ImageCard
                   highlighted="About me"
                   heading="Tedane Blake"
                   subheading={
                      <>
-
                         <ul>
                            <li><p>An Information Tech. graduate aspiring to be a Software/Web Developer.</p></li>
-
                         </ul>
                         <ul>
-
                            <li><p>B.S. Degree Program in Computer Programming Inf. Sys, Farmingdale State College, Farmingdale, NY</p></li>
                            <li><p>A.S. Degree Information Technology, Nassau Community College, Garden City, NY</p></li>
                         </ul>
                      </>
-
                   }
                   src={profile}
                />
-
             </Container>
             <div className="socials" style={{ display: 'flex' }}>
-
                <a href="https://twitter.com/iam_tcb">
-
                   <IconBox icon="bx bxl-twitter" hovertext="Go" background={themeColors.primary} />
                </a>
                <a href="https://github.com/tedtalksbits">
-
                   <IconBox icon="bx bxl-github" hovertext="Go" background={themeColors.primary} />
                </a>
                <a href="https://www.linkedin.com/in/tedane-blake-042918158/">
-
                   <IconBox icon="bx bxl-linkedin" hovertext="Go" background={themeColors.primary} />
                </a>
-
             </div>
          </ProfileAnimation>
-
-
       </MainContentWrapper>
    )
 }

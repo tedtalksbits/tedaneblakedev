@@ -20,8 +20,14 @@ export const links = [
       class: 'my-link projects'
    },
    {
+      title: "Testimonials",
+      href: '#testimonial',
+      class: 'my-link testimonial'
+   },
+   {
       title: "Contact",
       href: '#contact',
       class: 'my-link contact'
    },
+
 ]

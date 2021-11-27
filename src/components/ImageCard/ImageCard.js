@@ -1,5 +1,4 @@
 import React from 'react'
-import Anime from 'react-anime'
 import styled from 'styled-components'
 import { themeColors } from '../../data/appColors'
 

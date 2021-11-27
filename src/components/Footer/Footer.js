@@ -9,6 +9,8 @@ const FooterContainer = styled.footer`
    display: grid;
    grid-template-columns: .2fr .2fr .2fr .4fr;
    height:  15rem;
+   z-index: 2;
+   background: ${themeColors.black};
 
    @media screen and (max-width: ${mixin}){
       display: block;
@@ -48,8 +50,6 @@ const ScrollUpContainer = styled.div`
 const Footer = ({ primary }) => {
    return (
       <FooterContainer  >
-
-
          <ScrollUpContainer>
             <a href="#top">
                <IconBox
