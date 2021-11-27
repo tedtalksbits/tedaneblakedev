@@ -30,6 +30,7 @@ export const Input = styled.input`
    ::placeholder{
       color: ${themeColors.white_60};
       font-size: .875em;
+      text-transform: capitalize;
    }
 
    
@@ -58,6 +59,7 @@ export const TextArea = styled.textarea`
    ::placeholder{
       color: ${themeColors.white_60};
       font-size: .875em;
+      text-transform: capitalize;
    }
 
 `
