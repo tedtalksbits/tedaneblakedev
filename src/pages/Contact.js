@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import leftImage from '../images/gradient-left-dark-next-ui.svg'
 import rightImage from '../images/gradient-right-dark-next-ui.svg'
 import pattern from '../images/positive.png'
+import { Heading } from './InfoSection'
 
 const Background = styled.div`
    position: absolute;
@@ -55,7 +56,7 @@ const Contact = () => {
             <img src={rightImage} alt="left gradient" className="left" />
 
          </BgRight>
-         <h1 style={{ zIndex: 2 }}>Contact</h1>
+         <Heading style={{ zIndex: 2 }}>Contact</Heading>
          <div className="form-container" style={{ display: 'flex', justifyContent: 'center', zIndex: 2 }}>
 
             <form className="form" style={{ maxWidth: '600px', display: 'flex', flexDirection: 'column', width: '100%' }}>

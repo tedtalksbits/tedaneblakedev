@@ -11,6 +11,10 @@ export const Heading = styled.h1`
    margin-bottom: 1.6rem;
    color: ${themeColors.white};
    font-weight: 700;
+
+   /* ::first-letter{
+     text-decoration: underline;
+   } */
 `
 const ProfileAnimation = styled.div`
    opacity: 0;
