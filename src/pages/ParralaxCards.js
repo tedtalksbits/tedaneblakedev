@@ -14,21 +14,6 @@ const ParralaxCards = () => {
          className="section"
       >
          <Heading>Projects</Heading>
-         {/* <ResponsiveGrid size="300px" style={{ gap: '2.5rem' }}>
-            {projectsData.map((project, key) => (
-
-               <ImgCard
-                  key={key}
-                  img={project.preview}
-                  title={project.title}
-                  tags={project.techs}
-                  link={project.link}
-                  desc={project.desc}
-                  type={project.type}
-               />
-
-            ))}
-         </ResponsiveGrid> */}
          <CardsWrapper size="300px" style={{ gap: '2.5rem', margin: '5rem 0' }}>
             {projectsData.map((project, key) => (
 
