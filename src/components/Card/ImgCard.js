@@ -89,6 +89,10 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
       color: ${themeColors.black_80}
    }
 }
+.project-action{
+   display: flex;
+   justify-content: space-between;
+}
 `
 
 const DescriptionText = styled.p`
@@ -131,7 +135,7 @@ const DescriptionText = styled.p`
    }
 
 `
-const ImgCard = ({ img, title, tags, link, type, desc }) => {
+const ImgCard = ({ img, title, tags, link, type, desc, demo }) => {
 
    const [viewMore, setViewMore] = useState(false);
    return (
@@ -152,7 +156,13 @@ const ImgCard = ({ img, title, tags, link, type, desc }) => {
 
                   ))}
                </div>
-               <a href={link} className="link primary">View</a>
+               <div className="project-action">
+
+                  <a href={link} className="link primary">View</a>
+                  {demo &&
+                     <a href={demo} target="_blank" className="link primary">Demo</a>
+                  }
+               </div>
             </div>
          </div>
       </Card>

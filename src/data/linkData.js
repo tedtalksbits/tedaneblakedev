@@ -19,11 +19,11 @@ export const links = [
       href: '#projects',
       class: 'my-link projects'
    },
-   {
-      title: "Testimonials",
-      href: '#testimonial',
-      class: 'my-link testimonial'
-   },
+   // {
+   //    title: "Testimonials",
+   //    href: '#testimonial',
+   //    class: 'my-link testimonial'
+   // },
    {
       title: "Contact",
       href: '#contact',

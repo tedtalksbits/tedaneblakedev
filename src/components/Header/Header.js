@@ -55,7 +55,7 @@ const Header = () => {
          <div className="text">
             <Heading>Hi, </Heading>
             <Heading>I'm Tedane.</Heading>
-            <SubHeading>A Full-Stack Web Developer and Meditation Enthusiast.</SubHeading>
+            <SubHeading>A Full-Stack Web Developer studying computer programming.</SubHeading>
             <div className="button-container" style={{ display: 'flex', justifyContent: 'start' }}>
                <Button background={themeColors.primary} hoverBackground={themeColors.primary} href="#projects">Projects <i className='bx bx-right-arrow-alt' ></i></Button>
             </div>

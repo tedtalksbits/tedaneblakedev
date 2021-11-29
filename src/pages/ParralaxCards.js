@@ -25,6 +25,7 @@ const ParralaxCards = () => {
                   link={project.link}
                   desc={project.desc}
                   type={project.type}
+                  demo={project.demo}
                />
 
             ))}

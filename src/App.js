@@ -52,7 +52,6 @@ function App() {
         <InfoSection {...themeColors} />
         <Technologies {...themeColors} />
         <ParralaxCards {...themeColors} />
-        <Testimonials {...themeColors} />
         <Contact {...themeColors} />
         <Footer {...themeColors} />
       </MainApp>
