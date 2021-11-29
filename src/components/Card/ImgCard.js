@@ -158,7 +158,7 @@ const ImgCard = ({ img, title, tags, link, type, desc, demo }) => {
                </div>
                <div className="project-action">
 
-                  <a href={link} className="link primary">View</a>
+                  <a href={link} className="link primary">Code</a>
                   {demo &&
                      <a href={demo} target="_blank" className="link primary">Demo</a>
                   }
