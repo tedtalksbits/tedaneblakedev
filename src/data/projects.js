@@ -22,7 +22,7 @@ export const projectsData = [
       id: 'center_card',
       desc: "Using custom themes, this basic app was done to show case color theory as well as theme switching.",
       type: "Web App",
-      demo: ""
+      demo: "http://tedtalksbits.github.io/react-dashboard-refactor"
    },
    {
       preview: projectThreeImg,
