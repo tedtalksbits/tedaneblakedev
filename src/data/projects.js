@@ -1,6 +1,7 @@
 import projectOneImg from '../images/project1.jpg'
 import projectTwoImg from '../images/project2.jpg'
 import projectThreeImg from '../images/project3.jpg'
+import projectFourImg from '../images/project4.jpg'
 
 export const projectsData = [
    {
@@ -32,5 +33,15 @@ export const projectsData = [
       desc: "This is a personal project that aims to eleviate the eye strain on my college's official blackboard.",
       type: "Web App",
       demo: "https://tedtalksbits.github.io/modern-blackboard"
+   },
+   {
+      preview: projectFourImg,
+      title: 'Social Media',
+      techs: ["react", "Rest API", "MongoDB", "redux", "material-ui"],
+      link: 'https://github.com/tedtalksbits/memories_fullstack',
+      id: 'right_card',
+      desc: "Building this app helped me explore CRUD more in detail and also learn about redux and material ui. ",
+      type: "Web App",
+      demo: "https://emandtedblake.netlify.app"
    },
 ]
