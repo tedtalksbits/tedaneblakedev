@@ -5,7 +5,7 @@ import { themeColors } from '../../data/appColors'
 const ImageCardContainer = styled.div`
 
    display: grid;
-   grid-template-rows: 1fr 1fr;
+   /* grid-template-rows: 1fr 1fr; */
    gap: 4rem;
    height: fit-content;
   
@@ -18,15 +18,15 @@ const ImageCardContainer = styled.div`
 
 const CardImage = styled.div`
    
-   max-height: 340px;
+   max-height: 440px;
+   animation: floating 5s ease-in-out infinite;
 `
 
 const Image = styled.img`
 
    width: 100%;
    height: 100%;
-   object-fit: cover;
-   filter: grayscale(1);
+   object-fit: contain;
    border-radius: 3rem 31% 38px 15rem;
 
 
@@ -55,8 +55,8 @@ const CardSubHeading = styled.div`
 
 const ImageCard = ({ src, heading, subheading, highlighted }) => {
    return (
-      <ImageCardContainer>
-         <CardImage>
+      <ImageCardContainer className='bio-container'>
+         <CardImage className='floating image-container'>
             <Image src={src} />
          </CardImage>
          <CardText>

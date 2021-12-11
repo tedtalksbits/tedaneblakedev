@@ -9,7 +9,6 @@ import ParralaxCards from './pages/ParralaxCards';
 import Technologies from './pages/Technologies';
 import scrollSpy from './function';
 import Contact from './pages/Contact';
-import Testimonials from './pages/Testimonials';
 import leftImage from './images/gradient-left-dark-next-ui.svg'
 import rightImage from './images/gradient-right-dark-next-ui.svg'
 const MainApp = styled.main`

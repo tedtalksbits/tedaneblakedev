@@ -1,7 +1,7 @@
 import React, { useMemo, useRef, useState } from 'react'
 import ImageCard from '../components/ImageCard/ImageCard'
 import { Container, MainContentWrapper } from '../components/utils/mainComponents'
-import profile from '../images/tedaneprofile.JPG';
+import profile from '../images/man-laptop.png';
 import styled from 'styled-components';
 import { themeColors } from '../data/appColors';
 import IconBox from '../components/IconBox';
@@ -81,8 +81,8 @@ const InfoSection = ({ primary_05 }) => {
    return (
       <MainContentWrapper style={{ height: '100%', background: `${primary_05}` }} id='info' className="section info_section" ref={targetRef}>
          <ProfileAnimation className={`profile-card ${isVisible && 'inView'}`}>
+            <Heading>Profile</Heading>
             <Container>
-               <Heading>Profile</Heading>
                <ImageCard
                   highlighted="About me"
                   heading="Tedane Blake"

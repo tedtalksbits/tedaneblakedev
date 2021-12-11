@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardsWrapper } from '../components/Card/Card'
-import { MainContentWrapper, ResponsiveGrid } from '../components/utils/mainComponents'
+import { MainContentWrapper } from '../components/utils/mainComponents'
 import { themeColors } from '../data/appColors'
 import { Heading } from './InfoSection'
 import { projectsData } from '../data/projects'
