@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tedaneblakedev/static/css/main.7e3d1a82.chunk.css",
-    "main.js": "/tedaneblakedev/static/js/main.15e2b970.chunk.js",
-    "main.js.map": "/tedaneblakedev/static/js/main.15e2b970.chunk.js.map",
+    "main.js": "/tedaneblakedev/static/js/main.320c0dcb.chunk.js",
+    "main.js.map": "/tedaneblakedev/static/js/main.320c0dcb.chunk.js.map",
     "runtime-main.js": "/tedaneblakedev/static/js/runtime-main.2bd7601e.js",
     "runtime-main.js.map": "/tedaneblakedev/static/js/runtime-main.2bd7601e.js.map",
     "static/js/2.4bf725b4.chunk.js": "/tedaneblakedev/static/js/2.4bf725b4.chunk.js",
@@ -13,15 +13,15 @@
     "static/media/floatingmancompressed.de699a93.png": "/tedaneblakedev/static/media/floatingmancompressed.de699a93.png",
     "static/media/gradient-left-dark-next-ui.15fedbb0.svg": "/tedaneblakedev/static/media/gradient-left-dark-next-ui.15fedbb0.svg",
     "static/media/gradient-right-dark-next-ui.b130693b.svg": "/tedaneblakedev/static/media/gradient-right-dark-next-ui.b130693b.svg",
+    "static/media/man-laptop.7e8f45cc.png": "/tedaneblakedev/static/media/man-laptop.7e8f45cc.png",
     "static/media/project1.592ffadd.jpg": "/tedaneblakedev/static/media/project1.592ffadd.jpg",
     "static/media/project2.5150d62f.jpg": "/tedaneblakedev/static/media/project2.5150d62f.jpg",
-    "static/media/project4.6a07ab66.jpg": "/tedaneblakedev/static/media/project4.6a07ab66.jpg",
-    "static/media/tedaneprofile.0e139ed0.JPG": "/tedaneblakedev/static/media/tedaneprofile.0e139ed0.JPG"
+    "static/media/project4.6a07ab66.jpg": "/tedaneblakedev/static/media/project4.6a07ab66.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2bd7601e.js",
     "static/js/2.4bf725b4.chunk.js",
     "static/css/main.7e3d1a82.chunk.css",
-    "static/js/main.15e2b970.chunk.js"
+    "static/js/main.320c0dcb.chunk.js"
   ]
 }
