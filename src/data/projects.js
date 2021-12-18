@@ -1,11 +1,10 @@
-import projectOneImg from '../images/project1.jpg'
 import projectTwoImg from '../images/project2.jpg'
 import projectThreeImg from '../images/project3.jpg'
 import projectFourImg from '../images/project4.jpg'
 
 export const projectsData = [
    {
-      preview: projectOneImg,
+      preview: 'https://i.postimg.cc/CMtQD6TF/bloggio.gif',
       title: 'React Blog',
       techs: ["react", "styled-components", "Node JS", "API", "MongoDB"],
       link: 'https://github.com/tedtalksbits/react-blog',
