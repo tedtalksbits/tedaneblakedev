@@ -6,6 +6,7 @@ import { Heading } from './InfoSection'
 import { projectsData } from '../data/projects'
 import ImgCard from '../components/Card/ImgCard'
 
+
 const ParralaxCards = () => {
    return (
       <MainContentWrapper
@@ -14,8 +15,10 @@ const ParralaxCards = () => {
          className="section"
       >
          <Heading>Projects</Heading>
-         <CardsWrapper size="300px" style={{ gap: '2.5rem', margin: '5rem 0' }}>
+         <CardsWrapper size="300px" style={{ gap: '2.5rem', margin: '5rem 0', overflow: 'hidden' }}>
             {projectsData.map((project, key) => (
+
+
 
                <ImgCard
                   key={key}
@@ -27,6 +30,7 @@ const ParralaxCards = () => {
                   type={project.type}
                   demo={project.demo}
                />
+
 
             ))}
          </CardsWrapper>

@@ -6,6 +6,11 @@ import styled from 'styled-components';
 import { themeColors } from '../data/appColors';
 import IconBox from '../components/IconBox';
 import { useEffect } from 'react';
+import { VerticalTimeline } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import TimeLine, { TimeLineHeading } from '../components/TimeLine';
+import { fsc, ncc, work1, work2, work3 } from '../data/timeline';
+import Bounce from 'react-reveal/Bounce';
 
 export const Heading = styled.h1`
    margin-bottom: 1.6rem;
@@ -88,29 +93,43 @@ const InfoSection = ({ primary_05 }) => {
                   heading="Tedane Blake"
                   subheading={
                      <>
-                        <ul>
-                           <li><p>An Information Tech. graduate aspiring to be a Software/Web Developer.</p></li>
-                        </ul>
-                        <ul>
-                           <li><p>B.S. Degree Program in Computer Programming Inf. Sys, Farmingdale State College, Farmingdale, NY</p></li>
-                           <li><p>A.S. Degree Information Technology, Nassau Community College, Garden City, NY</p></li>
-                        </ul>
+                        <p>An Information Tech. graduate aspiring to be a Software/Web Developer.</p>
+                        <p style={{ margin: '4rem 0 1rem' }}>Socials: </p>
+                        <div className="socials" style={{ display: 'flex' }}>
+                           <Bounce >
+
+                              <a href="https://twitter.com/iam_tcb">
+                                 <IconBox icon="bx bxl-twitter" hovertext="Go" background={themeColors.primary} />
+                              </a>
+                              <a href="https://github.com/tedtalksbits">
+                                 <IconBox icon="bx bxl-github" hovertext="Go" background={themeColors.primary} />
+                              </a>
+                              <a href="https://www.linkedin.com/in/tedane-blake-042918158/">
+                                 <IconBox icon="bx bxl-linkedin" hovertext="Go" background={themeColors.primary} />
+                              </a>
+                           </Bounce>
+                        </div>
                      </>
                   }
                   src={profile}
                />
             </Container>
-            <div className="socials" style={{ display: 'flex' }}>
-               <a href="https://twitter.com/iam_tcb">
-                  <IconBox icon="bx bxl-twitter" hovertext="Go" background={themeColors.primary} />
-               </a>
-               <a href="https://github.com/tedtalksbits">
-                  <IconBox icon="bx bxl-github" hovertext="Go" background={themeColors.primary} />
-               </a>
-               <a href="https://www.linkedin.com/in/tedane-blake-042918158/">
-                  <IconBox icon="bx bxl-linkedin" hovertext="Go" background={themeColors.primary} />
-               </a>
-            </div>
+            <Container>
+               <TimeLineHeading heading="School" />
+               <VerticalTimeline>
+                  <TimeLine type='school' {...ncc} />
+                  <TimeLine type='school' {...fsc} />
+               </VerticalTimeline>
+
+               <TimeLineHeading heading="Experience" />
+               <VerticalTimeline>
+                  <TimeLine type='work' {...work1} />
+                  <TimeLine type='work' {...work2} />
+                  <TimeLine type='work' {...work3} />
+
+               </VerticalTimeline>
+            </Container>
+
          </ProfileAnimation>
       </MainContentWrapper>
    )

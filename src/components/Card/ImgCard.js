@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { themeColors } from '../../data/appColors'
 
+
 const Card = styled.div`
 border-radius: 8px;
 overflow: hidden;

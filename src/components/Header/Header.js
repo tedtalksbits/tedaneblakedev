@@ -4,6 +4,7 @@ import { themeColors } from '../../data/appColors'
 import headerImg from '../../images/floatingmancompressed.png'
 import { mixin } from '../NavBar/NavBar'
 import { Button } from '../utils/mainComponents'
+import Fade from 'react-reveal/Fade';
 
 const Container = styled.header`
    max-width: 1200px;
@@ -51,17 +52,23 @@ const SubHeading = styled.p`
 `
 const Header = () => {
    return (
-      <Container className="section" id='home'>
+      <Container className="section" id='home' style={{ overflow: 'hidden' }}>
          <div className="text">
-            <Heading>Hi, </Heading>
-            <Heading>I'm Tedane.</Heading>
-            <SubHeading>A Full-Stack Web Developer studying computer programming.</SubHeading>
+            <Fade top>
+
+               <Heading>Hi, </Heading>
+               <Heading>I'm Tedane.</Heading>
+               <SubHeading>A Full-Stack Web Developer studying computer programming.</SubHeading>
+            </Fade>
             <div className="button-container" style={{ display: 'flex', justifyContent: 'start' }}>
                <Button background={themeColors.primary} hoverBackground={themeColors.primary} href="#projects">Projects <i className='bx bx-right-arrow-alt' ></i></Button>
             </div>
          </div>
          <div className="img">
-            <img src={headerImg} alt="header ilustration" />
+            <Fade right>
+
+               <img src={headerImg} alt="header ilustration" />
+            </Fade>
          </div>
       </Container>
    )

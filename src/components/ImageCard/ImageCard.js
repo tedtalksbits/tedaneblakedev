@@ -55,6 +55,7 @@ const CardSubHeading = styled.div`
 
 const ImageCard = ({ src, heading, subheading, highlighted }) => {
    return (
+
       <ImageCardContainer className='bio-container'>
          <CardImage className='floating image-container'>
             <Image src={src} />

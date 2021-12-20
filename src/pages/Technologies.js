@@ -4,7 +4,7 @@ import { techCards } from '../data/techCardData'
 import styled from 'styled-components'
 import { themeColors } from '../data/appColors'
 import { Heading } from './InfoSection'
-import Anime from 'react-anime'
+import Slide from 'react-reveal/Slide';
 
 
 const IconsScrollWrapper = styled.div`
@@ -38,22 +38,20 @@ const IconDiv = styled.div`
 `
 const Technologies = () => {
    return (
-      <MainContentWrapper id="tech" className="section">
+      <MainContentWrapper id="tech" className="section" style={{ overflow: 'hidden' }}>
          <Heading>Technologies</Heading>
          <IconsScrollWrapper>
 
             <IconsContainer>
-               <Anime
-                  opacity={[0, 1]}
-                  translateY={['0', '1em']}
-                  delay={(e, i) => i * 200}
-               >
+               <Slide bottom>
+
                   {techCards.map((tech, key) => (
                      <IconDiv key={key}>
                         {tech.icon}
                      </IconDiv>
                   ))}
-               </Anime>
+               </Slide>
+
             </IconsContainer>
          </IconsScrollWrapper>
       </MainContentWrapper>
