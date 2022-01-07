@@ -38,14 +38,9 @@ const IconDiv = styled.div`
 `
 const Technologies = () => {
 
-   const targetRef = useRef(null)
 
-   useEffect(() => {
-
-      console.log(targetRef.current);
-   }, [targetRef])
    return (
-      <MainContentWrapper ref={targetRef} id="tech" className="section" style={{ overflow: 'hidden' }}>
+      <MainContentWrapper id="tech" className="section" style={{ overflow: 'hidden' }}>
          <Heading>Technologies</Heading>
          <IconsScrollWrapper>
 
