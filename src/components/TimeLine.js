@@ -21,9 +21,10 @@ const TimeLine = ({ title, date, icon, subtitle, tags, info, type }) => {
                <span style={{ fontWeight: '700' }}>{type === 'work' && ' ' || 'Major: '}  </span>
                {info}
             </p>
-            <small>
-               <span style={{ fontWeight: '600' }}>{type === 'school' ? 'Course work' : type === 'work' ? 'Duties' : ''}: </span>
-               {tags}
+            <small style={{ display: 'flex' }}>
+               <span style={{ fontWeight: '600' }}>{type === 'school' ? 'Course work' : type === 'work' ? 'Duties' : ''}</span>
+               <span>:  {tags}</span>
+
             </small>
          </VerticalTimelineElement>
 

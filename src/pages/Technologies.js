@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { MainContentWrapper } from '../components/utils/mainComponents'
 import { techCards } from '../data/techCardData'
 import styled from 'styled-components'
@@ -37,8 +37,15 @@ const IconDiv = styled.div`
 
 `
 const Technologies = () => {
+
+   const targetRef = useRef(null)
+
+   useEffect(() => {
+
+      console.log(targetRef.current);
+   }, [targetRef])
    return (
-      <MainContentWrapper id="tech" className="section" style={{ overflow: 'hidden' }}>
+      <MainContentWrapper ref={targetRef} id="tech" className="section" style={{ overflow: 'hidden' }}>
          <Heading>Technologies</Heading>
          <IconsScrollWrapper>
 

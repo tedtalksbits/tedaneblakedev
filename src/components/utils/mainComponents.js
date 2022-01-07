@@ -11,7 +11,7 @@ export const MainContentWrapper = styled.div`
    width: 100%;
    padding: 4rem 1rem;
    /* margin: 4rem 0; */
-   min-height: 50vh;
+   min-height: 75vh;
 
    > * input{
       color: ${props => props.color};

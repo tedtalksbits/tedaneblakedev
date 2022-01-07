@@ -64,12 +64,15 @@ const Header = () => {
                <Button background={themeColors.primary} hoverBackground={themeColors.primary} href="#projects">Projects <i className='bx bx-right-arrow-alt' ></i></Button>
             </div>
          </div>
-         <div className="img">
-            <Fade right>
+         <Fade right>
+
+            <div className="img">
+
 
                <img src={headerImg} alt="header ilustration" />
-            </Fade>
-         </div>
+
+            </div>
+         </Fade>
       </Container>
    )
 }

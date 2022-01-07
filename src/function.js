@@ -21,7 +21,7 @@ const scrollSpy = () => {
 
          const sectionHeight = section.clientHeight;
          const sectionTop = section.offsetTop;
-         if (value >= sectionTop - sectionHeight / 3) {
+         if (value >= sectionTop - (sectionHeight / 3.1)) {
             currentSection = section.getAttribute('id')
          }
       })

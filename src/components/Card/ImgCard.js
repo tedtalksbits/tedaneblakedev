@@ -12,13 +12,12 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
    .img{
       overflow: hidden;
-     
-
    }
    img{
       width: 100%;
       object-fit: cover;
       transition: transform .3s linear;
+      height: 200px;
      
       :hover{
          transform: scale(1.2);
@@ -46,7 +45,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .content-top{
-   margin-bottom: 30px;
+   margin-bottom: 10px;
 }
 .content-bottom{
    display: flex;
@@ -97,7 +96,6 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 `
 
 const DescriptionText = styled.p`
-
 
    font-size: 16px;
    line-height: 26px;

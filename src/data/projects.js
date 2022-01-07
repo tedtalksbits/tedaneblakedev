@@ -4,6 +4,26 @@ import projectFourImg from '../images/project4.jpg'
 
 export const projectsData = [
    {
+      preview: 'https://github.com/tedtalksbits/us-citizenship-quiz/raw/main/src/static/quiz-gif.gif',
+      title: 'US Citizen Quiz',
+      techs: ["react", "styled-components"],
+      link: 'https://github.com/tedtalksbits/us-citizenship-quiz',
+      id: "left_card",
+      desc: "US Citizenship Quiz: 28 Common Question directly from USCIS",
+      type: "Web App",
+      demo: "https://tedtalksbits.github.io/us-citizenship-quiz/"
+   },
+   {
+      preview: 'https://github.com/tedtalksbits/taskify/blob/main/src/screenshots/taskify-2.gif?raw=true',
+      title: 'Taskify - Notion Inspired',
+      techs: ["react", "styled-components", "Node JS", "REST API"],
+      link: 'https://github.com/tedtalksbits/taskify',
+      id: "left_card",
+      desc: "Furthering my React Developement by cloning some of my favorite apps",
+      type: "Web App",
+      demo: "https://tedtalksbits.github.io/taskify/"
+   },
+   {
       preview: 'https://i.postimg.cc/CMtQD6TF/bloggio.gif',
       title: 'React Blog',
       techs: ["react", "styled-components", "Node JS", "API", "MongoDB"],
