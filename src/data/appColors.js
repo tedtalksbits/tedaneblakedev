@@ -27,6 +27,7 @@ export const themeColors =
    white_30: '#fafafa4d',
    white_20: '#fafafa33',
    white_10: '#fafafa1a',
+   white_5: '#fafafa0a',
    gradientLight: '#0f0137',
    gradientDark: '#02040e',
    secondary: '#39ffce',

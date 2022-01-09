@@ -5,22 +5,30 @@ import { themeColors } from '../data/appColors'
 import { Heading } from './InfoSection'
 import { projectsData } from '../data/projects'
 import ImgCard from '../components/Card/ImgCard'
+import glowImg from '../images/gradient-right-dark-next-ui.svg'
+import styled from 'styled-components'
 
+const CustomContentWrapper = styled(MainContentWrapper)`
 
+   background: ${themeColors.page};
+   position: relative;
+   background-image: url(${glowImg});
+   background-position: center left;
+   background-size: cover;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+
+`
 const ParralaxCards = () => {
    return (
-      <MainContentWrapper
-         background={`linear-gradient(90deg, ${themeColors.primary} 0%, #764ba2 100%)`}
+      <CustomContentWrapper
+
          id="projects"
          className="section"
-         style={{ position: 'sticky', top: '-50rem' }}
       >
          <Heading>Projects</Heading>
          <CardsWrapper size="300px" style={{ gap: '2.5rem', margin: '5rem 0', overflow: 'hidden' }}>
             {projectsData.map((project, key) => (
-
-
-
                <ImgCard
                   key={key}
                   img={project.preview}
@@ -32,10 +40,9 @@ const ParralaxCards = () => {
                   demo={project.demo}
                />
 
-
             ))}
          </CardsWrapper>
-      </MainContentWrapper>
+      </CustomContentWrapper>
    )
 }
 

@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 const Container = styled.header`
    max-width: 1200px;
    margin: 0 auto;
-   padding: 4rem 1.4rem 0;
+   padding: 4rem 4rem 0;
    min-height: 100vh;
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -33,9 +33,9 @@ const Container = styled.header`
 
    @media screen and (max-width: ${mixin}){
       grid-template-columns: none;
-      padding: 6rem 1rem;
+      padding: 6rem 2.2rem;
       min-height: 100%;
-      gap: 6rem;
+      gap: 4rem;
 
       img{
          max-height: 550px;
