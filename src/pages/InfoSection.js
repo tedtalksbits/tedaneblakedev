@@ -93,7 +93,9 @@ const InfoSection = ({ primary_05 }) => {
                   heading="Tedane Blake"
                   subheading={
                      <>
-                        <p>An Information Tech. graduate aspiring to be a Software/Web Developer.</p>
+                        <p>I am a current student at Farmingdale State College where I am studying to complete a B.S. Degree in Computer Programming and Information Systems.</p>
+                        <br />
+                        <p>I have taken a wide variety of computer courses:  programming, software development, database management, systems design, maintenance and troubleshooting. In my current position at Estee Lauder LLC USA, I have worked with several computer technicians and have learned the importance of teamwork and customer service in the computer field.</p>
                         <p style={{ margin: '4rem 0 1rem' }}>Socials: </p>
                         <div className="socials" style={{ display: 'flex' }}>
                            <Bounce >
