@@ -46,7 +46,7 @@ const BgRight = styled.div`
 `
 const Contact = () => {
    return (
-      <MainContentWrapper id="contact" className="section" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', background: themeColors.black }}>
+      <MainContentWrapper id="contact" className="section" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', background: themeColors.black, position: 'relative', zIndex: 1 }}>
 
          <BgLeft className="left">
             <img src={leftImage} alt="left gradient" className="left" />

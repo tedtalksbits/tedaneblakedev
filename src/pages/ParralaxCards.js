@@ -17,7 +17,7 @@ const CustomContentWrapper = styled(MainContentWrapper)`
    background-size: cover;
    background-repeat: no-repeat;
    min-height: 100vh;
-
+   padding: 1rem 2rem;
 `
 const ParralaxCards = () => {
    return (
