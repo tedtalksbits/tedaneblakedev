@@ -46,8 +46,8 @@ const BgRight = styled.div`
 `
 const Contact = () => {
    return (
-      <MainContentWrapper id="contact" className="section" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden' }}>
-         <Background className='pattern-bg' />
+      <MainContentWrapper id="contact" className="section" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', backdropFilter: 'blur(20px)', background: '#000000c7' }}>
+
          <BgLeft className="left">
             <img src={leftImage} alt="left gradient" className="left" />
 

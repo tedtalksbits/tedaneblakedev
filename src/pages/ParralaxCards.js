@@ -13,6 +13,7 @@ const ParralaxCards = () => {
          background={`linear-gradient(90deg, ${themeColors.primary} 0%, #764ba2 100%)`}
          id="projects"
          className="section"
+         style={{ position: 'sticky', top: '-50rem' }}
       >
          <Heading>Projects</Heading>
          <CardsWrapper size="300px" style={{ gap: '2.5rem', margin: '5rem 0', overflow: 'hidden' }}>

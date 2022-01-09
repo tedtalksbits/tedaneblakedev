@@ -40,7 +40,7 @@ const Technologies = () => {
 
 
    return (
-      <MainContentWrapper id="tech" className="section" style={{ overflow: 'hidden' }}>
+      <MainContentWrapper id="tech" className="section" style={{ overflow: 'hidden', position: 'sticky', top: '0' }}>
          <Heading>Technologies</Heading>
          <IconsScrollWrapper>
 
