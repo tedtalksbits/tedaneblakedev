@@ -14,19 +14,19 @@ export const projectsData = [
       demo: "https://tedtalksbits.github.io/us-citizenship-quiz/"
    },
    {
-      preview: 'https://github.com/tedtalksbits/taskify/blob/main/src/screenshots/taskify-2.gif?raw=true',
-      title: 'Taskify - Notion Inspired',
-      techs: ["react", "styled-components", "Node JS", "REST API"],
-      link: 'https://github.com/tedtalksbits/taskify',
+      preview: 'https://github.com/tedtalksbits/cleartasks/raw/main/src/screenshots/ct-gif-custom.gif',
+      title: 'ClearTasks - Notion Inspired',
+      techs: ["react", "styled-components", "Node JS", "REST API", "MongoDB", "Firebase"],
+      link: 'https://github.com/tedtalksbits/cleartasks',
       id: "left_card",
-      desc: "Furthering my React Developement by cloning some of my favorite apps",
+      desc: " ClearTasks © is a task manager that helps you stay productive and organized by separating your tasks.",
       type: "Web App",
-      demo: "https://tedtalksbits.github.io/taskify/"
+      demo: "https://tedtalksbits.github.io/cleartasks/"
    },
    {
       preview: 'https://i.postimg.cc/CMtQD6TF/bloggio.gif',
       title: 'React Blog',
-      techs: ["react", "styled-components", "Node JS", "API", "MongoDB"],
+      techs: ["react", "styled-components", "Node JS", "REST API", "MongoDB"],
       link: 'https://github.com/tedtalksbits/react-blog',
       id: "left_card",
       desc: "A blog built with react that showcases many of the basic principles of a modern web app.",
