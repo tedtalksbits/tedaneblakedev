@@ -21,7 +21,7 @@ export const projectsData = [
       id: "left_card",
       desc: " ClearTasks © is a task manager that helps you stay productive and organized by separating your tasks.",
       type: "Web App",
-      demo: "https://tedtalksbits.github.io/cleartasks/"
+      demo: "https://tedtalksbits.github.io/cleartasks/#/cleartasks/"
    },
    {
       preview: 'https://i.postimg.cc/CMtQD6TF/bloggio.gif',
