@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tedaneblakedev/static/css/main.c3199a87.chunk.css",
-    "main.js": "/tedaneblakedev/static/js/main.9dd0889b.chunk.js",
-    "main.js.map": "/tedaneblakedev/static/js/main.9dd0889b.chunk.js.map",
+    "main.js": "/tedaneblakedev/static/js/main.a3e3db86.chunk.js",
+    "main.js.map": "/tedaneblakedev/static/js/main.a3e3db86.chunk.js.map",
     "runtime-main.js": "/tedaneblakedev/static/js/runtime-main.2bd7601e.js",
     "runtime-main.js.map": "/tedaneblakedev/static/js/runtime-main.2bd7601e.js.map",
     "static/css/2.2e99a83d.chunk.css": "/tedaneblakedev/static/css/2.2e99a83d.chunk.css",
@@ -17,13 +17,15 @@
     "static/media/gradient-right-dark-next-ui.b130693b.svg": "/tedaneblakedev/static/media/gradient-right-dark-next-ui.b130693b.svg",
     "static/media/man-laptop.7e8f45cc.png": "/tedaneblakedev/static/media/man-laptop.7e8f45cc.png",
     "static/media/project2.5150d62f.jpg": "/tedaneblakedev/static/media/project2.5150d62f.jpg",
-    "static/media/project4.6a07ab66.jpg": "/tedaneblakedev/static/media/project4.6a07ab66.jpg"
+    "static/media/project4.6a07ab66.jpg": "/tedaneblakedev/static/media/project4.6a07ab66.jpg",
+    "static/media/project5.9a175c36.gif": "/tedaneblakedev/static/media/project5.9a175c36.gif",
+    "static/media/project6.b52fd5d0.png": "/tedaneblakedev/static/media/project6.b52fd5d0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2bd7601e.js",
     "static/css/2.2e99a83d.chunk.css",
     "static/js/2.c14803fe.chunk.js",
     "static/css/main.c3199a87.chunk.css",
-    "static/js/main.9dd0889b.chunk.js"
+    "static/js/main.a3e3db86.chunk.js"
   ]
 }
