@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { themeColors } from "../../data/appColors";
 
@@ -6,7 +6,7 @@ const Card = styled.div`
   border-radius: 8px;
   overflow: hidden;
   max-height: 655px;
-  background: ${themeColors.black_80};
+  background: ${({ theme }) => theme.black_80};
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
   .img {
@@ -29,7 +29,7 @@ const Card = styled.div`
 
   .light {
     font-size: 14px;
-    color: ${themeColors.white_30};
+    color: ${({ theme }) => theme.white_30};
     margin-bottom: 10px;
     text-transform: capitalize;
   }
@@ -37,7 +37,7 @@ const Card = styled.div`
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    color: ${themeColors.white_90};
+    color: ${({ theme }) => theme.white_90};
     margin-bottom: 14px;
     text-transform: capitalize;
   }
@@ -64,26 +64,26 @@ const Card = styled.div`
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
-    color: ${themeColors.white_80};
+    color: ${({ theme }) => theme.white_80};
     text-transform: capitalize;
     margin: 0 7px 5px 0;
-    border: 1px ${themeColors.black_60} solid;
+    border: 1px ${({ theme }) => theme.black_60} solid;
     border-radius: 9px;
     padding: 3px 5px;
-    background: ${themeColors.black_40};
+    background: ${({ theme }) => theme.black_40};
   }
   .primary {
-    color: ${themeColors.secondary};
+    color: ${({ theme }) => theme.secondary};
     text-transform: capitalize;
-    border: 1px ${themeColors.secondary}aa solid;
+    border: 1px ${({ theme }) => theme.secondary}aa solid;
     border-radius: 9px;
     padding: 3px 15px;
-    background: ${themeColors.secondary}21;
+    background: ${({ theme }) => theme.secondary}21;
     transition: all ease 0.3s;
 
     :hover {
-      background: ${themeColors.secondary};
-      color: ${themeColors.black_80};
+      background: ${({ theme }) => theme.secondary};
+      color: ${({ theme }) => theme.black_80};
     }
   }
   .project-action {
@@ -96,37 +96,13 @@ const DescriptionText = styled.p`
   font-size: 16px;
   line-height: 26px;
   font-weight: 300;
-  color: ${themeColors.white_60};
+  color: ${({ theme }) => theme.white_60};
   text-transform: capitalize;
-  user-select: none;
   text-overflow: ellipsis;
   overflow: hidden;
-  height: 40px;
-  white-space: ${({ viewMore }) => (viewMore ? "normal" : "nowrap")};
-  cursor: pointer;
   transition: all 0.5s ease-in-out;
-  animation: ${({ viewMore }) => (viewMore ? "showText" : "hideText")} 0.3s ease
-    forwards;
-
-  @keyframes showText {
-    0% {
-      height: 40px;
-    }
-    100% {
-      height: 80px;
-    }
-  }
-  @keyframes hideText {
-    0% {
-      height: 80px;
-    }
-    100% {
-      height: 40px;
-    }
-  }
 `;
 const ImgCard = ({ img, title, tags, link, type, desc, demo }) => {
-  const [viewMore, setViewMore] = useState(false);
   return (
     <Card className="image-card">
       <div className="img">
@@ -142,13 +118,7 @@ const ImgCard = ({ img, title, tags, link, type, desc, demo }) => {
         <div className="content-top">
           <p className="light">{type || "Item"}</p>
           <p className="heading">{title || "Title"}</p>
-          <DescriptionText
-            className="thin description"
-            viewMore={viewMore}
-            onClick={() => setViewMore(!viewMore)}
-          >
-            {desc}
-          </DescriptionText>
+          <DescriptionText className="thin description">{desc}</DescriptionText>
         </div>
         <div className="content-bottom">
           <div className="tags">
