@@ -2,7 +2,6 @@ import React from "react";
 import { MainContentWrapper } from "../components/utils/mainComponents";
 import { techCards } from "../data/techCardData";
 import styled from "styled-components";
-import { themeColors } from "../data/appColors";
 import { Heading } from "./InfoSection";
 import Slide from "react-reveal/Slide";
 
@@ -28,7 +27,7 @@ const IconDiv = styled.div`
 
   i {
     font-size: 5rem;
-    color: ${themeColors.white_40};
+    color: ${({ theme }) => theme.white_40};
   }
 `;
 const Technologies = () => {

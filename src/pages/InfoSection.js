@@ -19,10 +19,11 @@ export const Heading = styled.h1`
   margin-bottom: 1.6rem;
   color: ${themeColors.white};
   font-weight: 700;
+`;
 
-  /* ::first-letter{
-     text-decoration: underline;
-   } */
+const InfoSectionWrapper = styled(MainContentWrapper)`
+  background: ${({ theme }) => theme.primary_05};
+  height: 100%;
 `;
 const ProfileAnimation = styled.div`
   opacity: 0;
@@ -49,7 +50,7 @@ const ProfileAnimation = styled.div`
     }
   }
 `;
-const InfoSection = ({ primary_05 }) => {
+const InfoSection = () => {
   const targetRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -80,8 +81,7 @@ const InfoSection = ({ primary_05 }) => {
   }, [targetRef, options]);
 
   return (
-    <MainContentWrapper
-      style={{ height: "100%", background: `${primary_05}` }}
+    <InfoSectionWrapper
       id="info"
       className="section info_section"
       ref={targetRef}
@@ -154,7 +154,7 @@ const InfoSection = ({ primary_05 }) => {
           </VerticalTimeline>
         </Container>
       </ProfileAnimation>
-    </MainContentWrapper>
+    </InfoSectionWrapper>
   );
 };
 

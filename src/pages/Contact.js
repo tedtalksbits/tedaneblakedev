@@ -11,6 +11,13 @@ import leftImage from "../images/gradient-left-dark-next-ui.svg";
 import rightImage from "../images/gradient-right-dark-next-ui.svg";
 import { Heading } from "./InfoSection";
 
+const ContactWrapper = styled(MainContentWrapper)`
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: ${({ theme }) => theme.black};
+  z-index: 1;
+`;
 const BgLeft = styled.div`
   position: absolute;
   z-index: 0;
@@ -36,17 +43,7 @@ const Contact = () => {
     body: "",
   });
   return (
-    <MainContentWrapper
-      id="contact"
-      className="section"
-      style={{
-        minHeight: "100vh",
-        position: "relative",
-        overflow: "hidden",
-        background: themeColors.black,
-        zIndex: 1,
-      }}
-    >
+    <ContactWrapper id="contact" className="section">
       <BgLeft className="left">
         <img src={leftImage} alt="left gradient" className="left" />
       </BgLeft>
@@ -108,7 +105,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </MainContentWrapper>
+    </ContactWrapper>
   );
 };
 

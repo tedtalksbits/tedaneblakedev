@@ -1,7 +1,7 @@
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import { themeColors } from "./data/appColors";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import Footer from "./components/Footer/Footer";
 import InfoSection from "./pages/InfoSection";
 import Header from "./components/Header/Header";
@@ -20,7 +20,8 @@ const GlobalStyle = createGlobalStyle`
     background: #02040e;
   }
   body {
-    background: var(--app-gradient);
+    background: ${({ theme }) => `linear-gradient(
+    180deg, ${theme.gradientLight} 0%,  ${theme.gradientDark} 17%)`};
     background-repeat: no-repeat;
     min-height: 100vh;
   }
@@ -49,22 +50,24 @@ function App() {
 
   return (
     <>
-      <GlobalStyle />
-      <MainApp className="App">
-        <div className="bg-image-left">
-          <img src={leftImage} alt="left gradient" className="left" />
-        </div>
-        <div className="bg-image-right">
-          <img src={rightImage} alt="left gradient" className="left" />
-        </div>
-        <NavBar {...themeColors} />
-        <Header {...themeColors} />
-        <InfoSection {...themeColors} />
-        <Technologies {...themeColors} />
-        <ParralaxCards {...themeColors} />
-        <Contact {...themeColors} />
-        <Footer {...themeColors} />
-      </MainApp>
+      <ThemeProvider theme={themeColors}>
+        <GlobalStyle />
+        <MainApp className="App">
+          <div className="bg-image-left">
+            <img src={leftImage} alt="left gradient" className="left" />
+          </div>
+          <div className="bg-image-right">
+            <img src={rightImage} alt="left gradient" className="left" />
+          </div>
+          <NavBar />
+          <Header />
+          <InfoSection />
+          <Technologies />
+          <ParralaxCards />
+          <Contact />
+          <Footer />
+        </MainApp>
+      </ThemeProvider>
     </>
   );
 }
