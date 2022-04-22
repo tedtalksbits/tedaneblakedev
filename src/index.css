@@ -2,12 +2,6 @@
   --app-gradient : linear-gradient(
     180deg, #0f0137 0%, #02040e 17%);
 }
-html{
-  scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
-  background: #02040e;
- 
-}
 *, *::before, *::after{
 box-sizing: border-box;
 }
@@ -15,11 +9,7 @@ body,h1,h2,h3,h4,h5,p,figure,blockquote,dl,dd{
   margin: 0;
   color: white;
 }
-body {
-  background: var(--app-gradient);
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
